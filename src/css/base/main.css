@@ -1,0 +1,46 @@
+body {
+    font-family: "work sans","roboto condensed","Urbanist", sans-serif;
+}
+
+/* ---------- Base / Reset ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    /* supprime la bande blanche sous le header */
+    background: var(--light);
+    color: var(--accent-100);
+    font-family: var(--font-family-work-sans), system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-size: var(--font-size-16);
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--primary-300);
+    outline-offset: 2px;
+}
+
+/* ---------- Home page wrapper ---------- */
+.homePage {
+    width: 100%;
+}

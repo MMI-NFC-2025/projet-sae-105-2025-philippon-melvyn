@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : PHILIPPON
+- PRÉNOM : MELVYN
+- GROUPE : B2
+- URL du site : 
+- URL FIGMA : 

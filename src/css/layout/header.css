@@ -1,0 +1,116 @@
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--primary-500);
+    padding: 0.9rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header__link img {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+.menu-btn {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    padding: 0.35rem;
+    display: grid;
+    gap: 0.35rem;
+    cursor: pointer;
+}
+
+.menu-btn__bar {
+    width: 28px;
+    height: 3px;
+    border-radius: 99px;
+    display: block;
+}
+
+.menu-btn__bar--light {
+    background: var(--light);
+}
+.menu {
+    position: fixed;
+    inset: 0;
+    background: var(--primary-500);
+    color: var(--light);
+    padding: 1.25rem;
+    transform: translateX(100%);
+    transition: transform 220ms ease;
+    z-index: 1100;
+}
+
+.menu[aria-hidden="false"] {
+    transform: translateX(0);
+}
+
+.menu__close {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--light);
+    font-size: var(--font-size-25);
+    font-family: var(--font-family-urbanist), system-ui, sans-serif;
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    margin-left: auto;
+    display: block;
+}
+
+.menu__list {
+    list-style: none;
+    margin: 1.25rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.95rem;
+}
+
+.menu__item--logo {
+    margin-bottom: 0.25rem;
+}
+
+.header__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: var(--light);
+}
+
+.header__logo-image {
+    width: 44px;
+    height: auto;
+    display: block;
+}
+
+.menu__link {
+    display: inline-flex;
+    width: 100%;
+    padding: 0.55rem 0;
+    font-family: var(--font-family-work-sans), system-ui, sans-serif;
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 0.02em;
+    color: rgba(244, 245, 240, 0.85);
+    text-transform: uppercase;
+}
+
+.menu-btn:focus-visible,
+.menu__close:focus-visible,
+.menu__link:focus-visible,
+.header__link:focus-visible {
+    outline: 2px solid var(--primary-300);
+    outline-offset: 3px;
+}

@@ -1,0 +1,997 @@
+
+
+.storyHero {
+    position: relative;
+}
+
+.storyHero__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.storyHero__title {
+    position: absolute;
+    left: 1.25rem;
+    top: 1.1rem;
+    margin: 0;
+    font-size: var(--font-size-35);
+    font-weight: var(--font-weight-extrabold);
+    line-height: 1.05;
+    color: var(--light);
+}
+
+.storyHero__scroll {
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: var(--primary-500);
+    border: 3px solid var(--light);
+    box-shadow: 0 10px 22px var(--dark);
+    text-decoration: none;
+}
+
+.storyPage__container {
+    padding: 3.1rem 1.25rem 2.25rem;
+    display: grid;
+    gap: 1.4rem;
+}
+
+.storySection {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.storySection__title {
+    margin: 0;
+    font-size: var(--font-size-25);
+    font-weight: var(--font-weight-extrabold);
+    color: var(--primary-300);
+}
+
+.storySection__text {
+    margin: 0;
+    font-size: var(--font-size-15);
+    line-height: 1.6;
+}
+
+.storySection__date {
+    font-weight: var(--font-weight-extrabold);
+    color: var(--primary-300);
+}
+
+.storyMedia {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.storyMedia__img {
+    width: 100%;
+    height: 155px;
+    /* bande image fine comme PDF */
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Caption “Vienne” en surimpression */
+.storyMedia__caption {
+    position: absolute;
+    left: 1rem;
+    bottom: 0.8rem;
+    margin: 0;
+
+    font-family: var(--font-family-urbanist), system-ui, sans-serif;
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-extrabold);
+    color: var(--light);
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- BLOC HIGHLIGHT bleu (comme PDF) ---------- */
+.storyHighlight {
+    margin-top: 0.2rem;
+    padding: 1.25rem 1.25rem 1.5rem;
+
+    background: var(--primary-300);
+    color: var(--light);
+
+    /* quadrillage discret */
+    background-image:
+        linear-gradient(rgba(209, 229, 241, 0.14) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(209, 229, 241, 0.14) 1px, transparent 1px);
+    background-size: 26px 26px;
+}
+
+.storyHighlight__title {
+    margin: 0 0 0.9rem;
+    font-family: var(--font-family-urbanist), system-ui, sans-serif;
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-extrabold);
+}
+
+.storyHighlight__content {
+    display: grid;
+    gap: 0.9rem;
+}
+
+.storyHighlight__text {
+    margin: 0;
+    font-family: var(--font-family-work-sans), system-ui, sans-serif;
+    font-size: var(--font-size-15);
+    line-height: 1.6;
+    color: rgba(244, 245, 240, 0.95);
+}
+
+/* ---------- CHRONOLOGIE : 2 colonnes (PDF) ---------- */
+.lifeTimeline {
+    padding-top: 0.2rem;
+}
+
+.lifeTimeline__title {
+    margin: 0 0 1rem;
+    font-family: var(--font-family-urbanist), system-ui, sans-serif;
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-extrabold);
+    color: var(--primary-300);
+}
+
+/* Liste en 2 colonnes alignées */
+.lifeTimeline__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 0.7rem 0.85rem;
+    align-items: stretch;
+}
+
+.lifeTimeline__item {
+    display: contents;
+}
+
+.lifeTimeline__range {
+    display: grid;
+    place-items: center;
+    padding: 0.75rem 0.5rem;
+    border-radius: 8px;
+
+    background: var(--primary-200);
+    color: var(--light);
+
+    font-family: var(--font-family-roboto-condensed), system-ui, sans-serif;
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-bold);
+}
+
+.lifeTimeline__label {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0.9rem;
+    border-radius: 8px;
+
+    background: rgba(33, 33, 33, 0.06);
+    color: rgba(33, 33, 33, 0.9);
+
+    font-family: var(--font-family-work-sans), system-ui, sans-serif;
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* état actif (case bleue plus foncée à gauche) */
+.lifeTimeline__item--active .lifeTimeline__range {
+    background: var(--primary-400);
+}
+
+/* ============================= */
+/* PAGE : SES ÉCRIT */
+/* ============================= */
+
+.writingsPage {
+    background-color: var(--light);
+    font-family: var(--font-family-work-sans);
+    color: var(--accent-100);
+}
+
+/* ===== TITRE PAGE ===== */
+
+.writingsHero__title {
+    font-family: var(--font-family-urbanist);
+    font-size: var(--font-size-35);
+    font-weight: var(--font-weight-extrabold);
+    padding: 2.5rem 1.5rem 1.5rem;
+}
+
+/* ===== CONTAINER ===== */
+
+.writingsPage__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 0 1.5rem 3rem;
+}
+
+/* ===== INTRO ===== */
+
+.writingsIntro__content {
+    background-color: var(--light);
+}
+
+.writingsIntro__text {
+    font-size: var(--font-size-16);
+    line-height: 1.6;
+    color: var(--accent-100);
+}
+
+/* ===== THÈSE ===== */
+
+.writingsThesis__title {
+    font-family: var(--font-family-urbanist);
+    font-size: var(--font-size-25);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-300);
+    margin-bottom: 1rem;
+}
+
+.writingsThesis__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.writingsThesis__text {
+    font-size: var(--font-size-16);
+    line-height: 1.6;
+}
+
+/* ===== BLOC BLEU ===== */
+
+.writingsBlue {
+    background-color: var(--primary-300);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image */
+
+.writingsBlue__media {
+    width: 100%;
+}
+
+.writingsBlue__img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Panneau texte */
+
+.writingsBlue__panel {
+    padding: 1.5rem;
+    background-color: var(--primary-300);
+}
+
+.writingsBlue__title {
+    font-family: var(--font-family-urbanist);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-bold);
+    color: var(--light);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.writingsBlue__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.writingsBlue__text {
+    font-size: var(--font-size-15);
+    line-height: 1.6;
+    color: var(--light);
+}
+
+/* ============================= */
+/* PAGE : CONTACT */
+/* ============================= */
+
+.contactPage {
+    background-color: var(--light);
+    font-family: var(--font-family-work-sans);
+    color: var(--accent-100);
+    padding-bottom: 3rem;
+}
+
+/* =============================
+   INTRO
+   ============================= */
+
+.contactIntro {
+    padding: 2.5rem 1.5rem 2rem;
+}
+
+.contactIntro__title {
+    font-family: var(--font-family-urbanist);
+    font-size: var(--font-size-35);
+    font-weight: var(--font-weight-extrabold);
+    margin-bottom: 1rem;
+}
+
+.contactIntro__text {
+    font-size: var(--font-size-16);
+    line-height: 1.6;
+    max-width: 28rem;
+}
+
+/* =============================
+   FORMULAIRE
+   ============================= */
+
+.contactForm {
+    padding: 0 1.5rem 3rem;
+}
+
+.contactForm__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contactForm__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.contactForm__label {
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-semibold);
+}
+
+.contactForm__input,
+.contactForm__textarea {
+    font-family: var(--font-family-work-sans);
+    font-size: var(--font-size-15);
+    padding: 0.75rem 0.9rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(33, 33, 33, 0.25);
+    background-color: #ffffff;
+}
+
+.contactForm__input::placeholder,
+.contactForm__textarea::placeholder {
+    color: rgba(33, 33, 33, 0.5);
+}
+
+.contactForm__input:focus,
+.contactForm__textarea:focus {
+    outline: none;
+    border-color: var(--primary-300);
+}
+
+/* Bouton */
+
+.contactForm__button {
+    margin-top: 1rem;
+    align-self: flex-start;
+
+    font-family: var(--font-family-urbanist);
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-bold);
+
+    padding: 0.75rem 1.75rem;
+    border-radius: 2rem;
+    border: none;
+
+    background-color: var(--primary-300);
+    color: var(--light);
+
+    cursor: pointer;
+}
+
+/* =============================
+   AUTRES CONTACTS
+   ============================= */
+
+.contactAlt {
+    padding: 0 1.5rem;
+}
+
+.contactAlt__title {
+    font-family: var(--font-family-urbanist);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-extrabold);
+    margin-bottom: 1.5rem;
+}
+
+/* Liste */
+
+.contactAlt__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Item */
+
+.contactAlt__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Numéro */
+
+.contactAlt__number {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--font-family-urbanist);
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-bold);
+
+    background-color: var(--primary-300);
+    color: var(--light);
+}
+
+/* Contenu */
+
+.contactAlt__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactAlt__label {
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-semibold);
+}
+
+.contactAlt__value {
+    font-size: var(--font-size-15);
+    color: var(--accent-100);
+    text-decoration: none;
+}
+
+/* =========================
+   LEXIQUE (page)
+   Classes utilisées : lexiconPage, lexiconIntro, lexiconList,
+   lexiconList__groups, lexiconGroup + ses éléments
+   ========================= */
+
+.lexiconPage {
+    background: var(--light);
+    color: var(--accent-100);
+}
+
+/* -------- Intro -------- */
+.lexiconIntro {
+    padding: 1.5rem 1.25rem 0.75rem;
+}
+
+.lexiconIntro__title {
+    margin: 0 0 0.75rem;
+    font-family: var(--font-family-roboto-condensed);
+    font-weight: var(--font-weight-extrabold);
+    font-size: var(--font-size-35);
+    letter-spacing: var(--letter-spacing-0);
+    line-height: 1.05;
+}
+
+.lexiconIntro__text {
+    margin: 0;
+    font-family: var(--font-family-work-sans);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-15);
+    line-height: 1.5;
+    max-width: 38ch;
+}
+
+/* -------- Liste -------- */
+.lexiconList {
+    padding: 0.75rem 1.25rem 2.25rem;
+}
+
+.lexiconList__groups {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* -------- Groupe -------- */
+.lexiconGroup {
+    /* couleur par défaut (sera surchargée par nth-child) */
+    --group-color: var(--primary-400);
+    position: relative;
+}
+
+/* Couleurs par groupe (ordre de la maquette) */
+.lexiconGroup:nth-child(1) {
+    --group-color: var(--primary-500);
+}
+
+/* A */
+.lexiconGroup:nth-child(2) {
+    --group-color: var(--primary-300);
+}
+
+/* B */
+.lexiconGroup:nth-child(3) {
+    --group-color: var(--primary-200);
+}
+
+/* C */
+.lexiconGroup:nth-child(4) {
+    --group-color: var(--primary-500);
+}
+
+/* D */
+.lexiconGroup:nth-child(5) {
+    --group-color: var(--primary-300);
+}
+
+/* E */
+.lexiconGroup:nth-child(6) {
+    --group-color: var(--primary-200);
+}
+
+/* I */
+.lexiconGroup:nth-child(7) {
+    --group-color: var(--primary-500);
+}
+
+/* M */
+.lexiconGroup:nth-child(8) {
+    --group-color: var(--primary-300);
+}
+
+/* P */
+.lexiconGroup:nth-child(9) {
+    --group-color: var(--primary-200);
+}
+
+/* R */
+
+/* Badge lettre (carré arrondi) */
+.lexiconGroup__badge {
+    position: absolute;
+    top: -0.65rem;
+    left: -0.15rem;
+    width: 3.1rem;
+    height: 3.1rem;
+    border-radius: 0.75rem;
+    background: var(--group-color);
+    display: grid;
+    place-items: center;
+    box-shadow: 0 10px 18px rgba(13, 12, 12, 0.18);
+    z-index: 2;
+}
+
+.lexiconGroup__letter {
+    font-family: var(--font-family-roboto-condensed);
+    font-weight: var(--font-weight-extrabold);
+    font-size: 1.35rem;
+    line-height: 1;
+    color: #fff;
+}
+
+/* Carte */
+.lexiconGroup__card {
+    position: relative;
+    border-radius: 0.85rem;
+    background: #f1f1ee;
+    padding: 1.15rem 1.1rem 1rem;
+    box-shadow: 0 12px 20px rgba(13, 12, 12, 0.18);
+    overflow: hidden;
+}
+
+/* Bande colorée en haut (style maquette) */
+.lexiconGroup__card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.9rem;
+    background: var(--group-color);
+}
+
+/* Items */
+.lexiconGroup__item {
+    margin: 0;
+    padding: 0.65rem 0 0;
+    font-family: var(--font-family-work-sans);
+    font-size: var(--font-size-12);
+    line-height: 1.45;
+}
+
+/* Espacement entre définitions */
+.lexiconGroup__item+.lexiconGroup__item {
+    margin-top: 0.85rem;
+}
+
+/* Terme + définition */
+.lexiconGroup__term {
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-300);
+}
+
+.lexiconGroup__def {
+    font-weight: var(--font-weight-regular);
+    color: var(--accent-100);
+}
+
+/* Petit confort de lecture */
+.lexiconGroup__card em {
+    font-style: italic;
+}
+
+/* Accessibilité : focus visible sur liens potentiels dans defs */
+.lexiconPage a:focus-visible {
+    outline: 2px solid var(--primary-300);
+    outline-offset: 2px;
+    border-radius: 0.25rem;
+}
+
+/* =========================
+   RESSOURCES (page)
+   ========================= */
+
+.resourcesPage {
+    background: var(--light);
+    color: var(--dark);
+}
+
+/* Intro */
+.resourcesIntro {
+    padding: 1.25rem 1rem 0.75rem;
+}
+
+.resourcesIntro__title {
+    font-family: var(--font-family-urbanist);
+    font-size: var(--font-size-35);
+    font-weight: var(--font-weight-extrabold);
+    letter-spacing: var(--letter-spacing-0);
+    margin: 0 0 0.75rem;
+}
+
+.resourcesIntro__text {
+    font-family: var(--font-family-work-sans);
+    font-size: var(--font-size-16);
+    line-height: 1.55;
+    margin: 0;
+    max-width: 34ch;
+}
+
+/* Liste */
+.resourcesList {
+    padding: 0.75rem 1rem 1.25rem;
+}
+
+.resourcesList__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.9rem;
+}
+
+/* Carte */
+.resourcesCard {
+    display: grid;
+    grid-template-columns: 74px 1fr;
+    align-items: center;
+    column-gap: 0.75rem;
+
+    background: #eef0ea;
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+    min-height: 72px;
+}
+
+/* Colonne logo */
+.resourcesCard__media {
+    display: grid;
+    place-items: center;
+    padding: 0.6rem 0.3rem;
+}
+
+.resourcesCard__img {
+    width: 58px;
+    height: 58px;
+    border-radius: 999px;
+    object-fit: cover;
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Colonne contenu */
+.resourcesCard__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.85rem 0.75rem 0.85rem 0;
+    border-left: 1px solid rgba(28, 124, 209, 0.25);
+}
+
+.resourcesCard__name {
+    margin: 0;
+    font-family: var(--font-family-roboto-condensed);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-400);
+    letter-spacing: 0.01em;
+    line-height: 1.1;
+}
+
+/* Bouton "En savoir plus" à droite */
+.resourcesCard__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    font-family: var(--font-family-roboto-condensed);
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+
+    color: var(--light);
+    background: var(--primary-400);
+    padding: 0.55rem 0.85rem;
+    border-radius: 0.35rem;
+    white-space: nowrap;
+
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.resourcesCard__link:hover {
+    background: var(--primary-300);
+}
+
+.resourcesCard__link:focus-visible {
+    outline: 2px solid var(--primary-300);
+    outline-offset: 2px;
+}
+
+.resourcesCard__link span[aria-hidden="true"] {
+    font-size: 1.05em;
+    line-height: 1;
+}
+
+/* ================================
+   P A G E  :  L E S  P I O N N I È R E S
+   (mobile-first, BEM, basé sur la maquette PDF) :contentReference[oaicite:0]{index=0}
+================================ */
+
+/* Page wrapper */
+.pioneersPage {
+    background: var(--light);
+    color: var(--accent-100);
+    font-family: var(--font-family-work-sans);
+}
+
+/* ================================
+   Intro
+================================ */
+.pioneersIntro {
+    padding: 22px 18px 10px;
+}
+
+.pioneersIntro__title {
+    margin: 6px 0 14px;
+    font-family: var(--font-family-roboto-condensed);
+    font-size: var(--font-size-35);
+    font-weight: var(--font-weight-extrabold);
+    letter-spacing: var(--letter-spacing-0);
+    line-height: 1.05;
+}
+
+.pioneersIntro__text {
+    margin: 0 0 12px;
+    font-size: var(--font-size-15);
+    line-height: 1.55;
+    color: var(--accent-100);
+}
+
+/* ================================
+   Focus (image + texte)
+================================ */
+.pioneersFocus {
+    padding: 6px 18px 14px;
+}
+
+.pioneersFocus__media {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #ddd;
+    box-shadow: 0 8px 18px rgba(13, 12, 12, 0.18);
+}
+
+.pioneersFocus__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.pioneersFocus__content {
+    padding: 12px 2px 0;
+}
+
+.pioneersFocus__text {
+    margin: 0;
+    font-size: var(--font-size-15);
+    line-height: 1.6;
+    color: var(--accent-100);
+}
+
+/* ================================
+   Thème fort (pastilles)
+================================ */
+.pioneersThemes {
+    padding: 10px 18px 6px;
+}
+
+.pioneersThemes__title {
+    margin: 10px 0 12px;
+    text-align: center;
+    font-family: var(--font-family-roboto-condensed);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-bold);
+    color: var(--accent-100);
+}
+
+.pioneersThemes__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 14px;
+}
+
+.pioneersThemes__item {
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 10px;
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-semibold);
+    color: var(--light);
+    box-shadow: 0 8px 16px rgba(13, 12, 12, 0.16);
+}
+
+/* Couleurs selon la maquette */
+.pioneersThemes__item--primary {
+    background: var(--primary-300);
+}
+
+.pioneersThemes__item--secondary {
+    background: var(--primary-400);
+}
+
+.pioneersThemes__item--tertiary {
+    background: var(--primary-200);
+    color: var(--primary-500);
+}
+
+.pioneersThemes__item--dark {
+    background: var(--primary-500);
+}
+
+/* ================================
+   Continuez votre exploration (card list)
+================================ */
+.pioneersExplore {
+    padding: 14px 18px 10px;
+}
+
+.pioneersExplore__title {
+    margin: 10px 0 10px;
+    font-family: var(--font-family-roboto-condensed);
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-300);
+}
+
+.pioneersExplore__list {
+    list-style: none;
+    padding: 14px;
+    margin: 0;
+    border-radius: 10px;
+    background: rgba(209, 229, 241, 0.55);
+    /* --primary-100 adouci */
+    box-shadow: 0 10px 20px rgba(13, 12, 12, 0.14);
+}
+
+.pioneersExplore__item+.pioneersExplore__item {
+    margin-top: 12px;
+}
+
+.pioneersExplore__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(209, 229, 241, 0.65);
+    border: 1px solid rgba(28, 124, 209, 0.2);
+}
+
+.pioneersExplore__number {
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    margin-left: 10px;
+    flex: 0 0 auto;
+    background: var(--primary-300);
+    color: var(--light);
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-bold);
+}
+
+.pioneersExplore__label {
+    flex: 1 1 auto;
+    padding: 12px 12px;
+    font-size: var(--font-size-15);
+    color: var(--primary-500);
+    font-family: var(--font-family-work-sans);
+    font-weight: var(--font-weight-semibold);
+}
+
+.pioneersExplore__arrow {
+    width: 62px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: var(--primary-400);
+    color: var(--light);
+    font-size: var(--font-size-18);
+}
+
+/* petit feedback tactile */
+.pioneersExplore__link:active {
+    transform: translateY(1px);
+}
+
+/* ================================
+   Outro
+================================ */
+.pioneersOutro {
+    padding: 10px 18px 24px;
+}
+
+.pioneersOutro__text {
+    margin: 0 0 12px;
+    font-size: var(--font-size-15);
+    line-height: 1.6;
+    color: var(--accent-100);
+}

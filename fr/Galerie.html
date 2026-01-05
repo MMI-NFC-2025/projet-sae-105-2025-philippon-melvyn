@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Explorez la galerie AQITA : une sélection de films, documentaires et œuvres mettant en lumière les femmes et leur place dans l’histoire des sciences." />
+    <title>Archives - AQITA</title>
+
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/favicons/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <script type="module" src="../src/js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__link" href="../index.html">
+            <img src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" />
+        </a>
+        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
+        </button>
+
+        <nav class="menu" id="mainNav" aria-hidden="true">
+            <button class="menu__close" aria-label="Fermer le menu">✕</button>
+            <ul class="menu__list">
+                <li class="menu__item menu__item--logo">
+                    <a href="../index.html" class="header__logo">
+                        <img src="../assets/icons/Logo_AQITA_Light.svg" alt="" class="header__logo-image"
+                            aria-hidden="true">
+                        <span>AQITA</span>
+                    </a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="chercheuse.html">SON HISTOIRE</a></li>
+                <li class="menu__item"><a class="menu__link" href="Sathese.html">SES ÉCRIT</a></li>
+                <li class="menu__item"><a class="menu__link" href="Lesgrandesoubliée.html">LES GRANDES OUBLIÉES</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="Film.html">PICTURE A SCIENTIST</a></li>
+                <li class="menu__item"><a class="menu__link" href="Lespionnieres.html">LES PIONNIÈRES</a></li>
+                <li class="menu__item"><a class="menu__link" href="Lhistoiredesfemmes.html">L'HISTOIRE DES FEMMES</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="Galerie.html">ARCHIVES</a></li>
+                <li class="menu__item"><a class="menu__link" href="Contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="archivesPage" id="main-content">
+
+        <section class="archivesIntro" aria-labelledby="archives-title">
+            <h1 class="archivesIntro__title" id="archives-title">Archives</h1>
+
+            <p class="archivesIntro__text">
+                Explorez une sélection de films, séries et documentaires en lien avec les femmes et la science.
+                Ces œuvres mettent en lumière leurs parcours, leurs luttes et les découvertes qui ont changé notre
+                vision du
+                monde.
+            </p>
+        </section>
+
+        <!-- Carousel -->
+        <section class="archivesCarousel" aria-labelledby="archives-carousel-title">
+            <h2 class="archivesCarousel__title" id="archives-carousel-title">Galerie</h2>
+
+            <div class="archivesCarousel__viewport">
+                <button class="archivesCarousel__control archivesCarousel__control--prev" type="button"
+                    aria-label="Œuvre précédente">
+                    <span aria-hidden="true">‹</span>
+                </button>
+
+                <div class="archivesCarousel__track" aria-label="Carrousel d’œuvres">
+                    <div class="archivesCarousel__slide archivesCarousel__slide--active" data-index="0">
+                        <img class="archivesCarousel__img" src="../assets/img/imgCarousel_Lesfiguresdel'ombre.avif"
+                            alt="Affiche : Les Figures de l’ombre" />
+                        <p class="archivesCarousel__caption">Les Figures de l’ombre</p>
+                    </div>
+
+                    <div class="archivesCarousel__slide" data-index="1" hidden>
+                        <img class="archivesCarousel__img" src="/#" alt="Affiche : Titre œuvre 2" loading="lazy" />
+                        <p class="archivesCarousel__caption">Titre œuvre 2</p>
+                    </div>
+
+                    <div class="archivesCarousel__slide" data-index="2" hidden>
+                        <img class="archivesCarousel__img" src="/#" alt="Affiche : Titre œuvre 3" loading="lazy" />
+                        <p class="archivesCarousel__caption">Titre œuvre 3</p>
+                    </div>
+
+                    <div class="archivesCarousel__slide" data-index="3" hidden>
+                        <img class="archivesCarousel__img" src="/#" alt="Affiche : Titre œuvre 4" loading="lazy" />
+                        <p class="archivesCarousel__caption">Titre œuvre 4</p>
+                    </div>
+
+                    <div class="archivesCarousel__slide" data-index="4" hidden>
+                        <img class="archivesCarousel__img" src="/#" alt="Affiche : Titre œuvre 5" loading="lazy" />
+                        <p class="archivesCarousel__caption">Titre œuvre 5</p>
+                    </div>
+
+                    <div class="archivesCarousel__slide" data-index="5" hidden>
+                        <img class="archivesCarousel__img" src="/#" alt="Affiche : Titre œuvre 6" loading="lazy" />
+                        <p class="archivesCarousel__caption">Titre œuvre 6</p>
+                    </div>
+
+                    <div class="archivesCarousel__slide" data-index="6" hidden>
+                        <img class="archivesCarousel__img" src="/#" alt="Affiche : Titre œuvre 7" loading="lazy" />
+                        <p class="archivesCarousel__caption">Titre œuvre 7</p>
+                    </div>
+
+                    <div class="archivesCarousel__slide" data-index="7" hidden>
+                        <img class="archivesCarousel__img" src="/#" alt="Affiche : Titre œuvre 8" loading="lazy" />
+                        <p class="archivesCarousel__caption">Titre œuvre 8</p>
+                    </div>
+                </div>
+
+                <button class="archivesCarousel__control archivesCarousel__control--next" type="button"
+                    aria-label="Œuvre suivante">
+                    <span aria-hidden="true">›</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="archivesDetails" aria-labelledby="archives-details-title">
+            <h2 class="archivesDetails__title" id="archives-details-title">Les Figures de l’ombre</h2>
+
+            <h3 class="archivesDetails__subtitle">Synopsis</h3>
+            <p class="archivesDetails__text">
+                Trois mathématiciennes afro-américaines, Katherine Johnson, Dorothy Vaughan et Mary Jackson,
+                jouent un rôle crucial dans le programme spatial de la NASA, surmontant les obstacles du racisme et du
+                sexisme.
+            </p>
+
+            <div class="archivesDetails__info">
+                <div class="archivesDetails__row">
+                    <p class="archivesDetails__label">Réalisateur :</p>
+                    <p class="archivesDetails__value">Theodore Melfi</p>
+                </div>
+
+                <div class="archivesDetails__row">
+                    <p class="archivesDetails__label">Année :</p>
+                    <p class="archivesDetails__value">2016</p>
+                </div>
+
+                <div class="archivesDetails__row">
+                    <p class="archivesDetails__label">Langue :</p>
+                    <p class="archivesDetails__value">Anglais</p>
+                </div>
+            </div>
+
+            <a class="archivesDetails__button" href="/#">
+                En savoir plus <span aria-hidden="true">→</span>
+            </a>
+        </section>
+
+        <section class="archivesData" aria-label="Données des œuvres" hidden>
+            <div class="archivesData__item" data-index="0">
+                <p class="archivesData__title">Les Figures de l’ombre</p>
+                <p class="archivesData__synopsis">
+                    Trois mathématiciennes afro-américaines, Katherine Johnson, Dorothy Vaughan et Mary Jackson,
+                    jouent un rôle crucial dans le programme spatial de la NASA, surmontant les obstacles du racisme et
+                    du
+                    sexisme.
+                </p>
+                <p class="archivesData__director">Theodore Melfi</p>
+                <p class="archivesData__year">2016</p>
+                <p class="archivesData__language">Anglais</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+
+            <div class="archivesData__item" data-index="1">
+                <p class="archivesData__title">Titre œuvre 2</p>
+                <p class="archivesData__synopsis">Synopsis œuvre 2…</p>
+                <p class="archivesData__director">Réalisateur œuvre 2…</p>
+                <p class="archivesData__year">Année…</p>
+                <p class="archivesData__language">Langue…</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+
+            <div class="archivesData__item" data-index="2">
+                <p class="archivesData__title">Titre œuvre 3</p>
+                <p class="archivesData__synopsis">Synopsis œuvre 3…</p>
+                <p class="archivesData__director">Réalisateur œuvre 3…</p>
+                <p class="archivesData__year">Année…</p>
+                <p class="archivesData__language">Langue…</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+
+            <div class="archivesData__item" data-index="3">
+                <p class="archivesData__title">Titre œuvre 4</p>
+                <p class="archivesData__synopsis">Synopsis œuvre 4…</p>
+                <p class="archivesData__director">Réalisateur œuvre 4…</p>
+                <p class="archivesData__year">Année…</p>
+                <p class="archivesData__language">Langue…</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+
+            <div class="archivesData__item" data-index="4">
+                <p class="archivesData__title">Titre œuvre 5</p>
+                <p class="archivesData__synopsis">Synopsis œuvre 5…</p>
+                <p class="archivesData__director">Réalisateur œuvre 5…</p>
+                <p class="archivesData__year">Année…</p>
+                <p class="archivesData__language">Langue…</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+
+            <div class="archivesData__item" data-index="5">
+                <p class="archivesData__title">Titre œuvre 6</p>
+                <p class="archivesData__synopsis">Synopsis œuvre 6…</p>
+                <p class="archivesData__director">Réalisateur œuvre 6…</p>
+                <p class="archivesData__year">Année…</p>
+                <p class="archivesData__language">Langue…</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+
+            <div class="archivesData__item" data-index="6">
+                <p class="archivesData__title">Titre œuvre 7</p>
+                <p class="archivesData__synopsis">Synopsis œuvre 7…</p>
+                <p class="archivesData__director">Réalisateur œuvre 7…</p>
+                <p class="archivesData__year">Année…</p>
+                <p class="archivesData__language">Langue…</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+
+            <div class="archivesData__item" data-index="7">
+                <p class="archivesData__title">Titre œuvre 8</p>
+                <p class="archivesData__synopsis">Synopsis œuvre 8…</p>
+                <p class="archivesData__director">Réalisateur œuvre 8…</p>
+                <p class="archivesData__year">Année…</p>
+                <p class="archivesData__language">Langue…</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer" aria-label="Pied de page">
+
+        <div class="footer__content">
+
+            <div class="footer__logo">
+                <a href="../index.html" class="footer__logo-link">
+                    <img src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" class="footer__logo-img"
+                        loading="lazy">
+                </a>
+            </div>
+
+            <nav class="footer__menu" aria-label="Menu du footer">
+                <h3 class="footer__menu-title">MENU</h3>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item"><a href="Quisommenous.html" class="footer__menu-link">Qui somme nous
+                        </a>
+                        |</li>
+                    <li class="footer__menu-item"><a href="Ressource.html" class="footer__menu-link">Ressources </a> |
+                    </li>
+                    <li class="footer__menu-item"><a href="lexique.html" class="footer__menu-link">Lexique </a> |</li>
+                    <li class="footer__menu-item"><a href="contact.html" class="footer__menu-link">Contact </a> |</li>
+                </ul>
+            </nav>
+
+            <div class="footer__socials">
+                <span class="footer__separator"></span>
+                <h3 class="footer__socials-title">SUIVEZ NOUS</h3>
+                <ul class="footer__socials-list">
+                    <li><a href="../index.html" class="footer__social-link"><img src="../assets/icons/youtube-light.svg"
+                                alt="YouTube" loading="lazy"></a></li>
+                    <li><a href="../index.html" class="footer__social-link"><img src="../assets/icons/discord-light.svg"
+                                alt="Discord" loading="lazy"></a></li>
+                    <li><a href="../index.html" class="footer__social-link"><img
+                                src="../assets/icons/facebook-light.svg" alt="Facebook" loading="lazy"></a></li>
+                    <li><a href="../index.html" class="footer__social-link"><img src="../assets/icons/tiktok-light.svg"
+                                alt="TikTok" loading="lazy"></a></li>
+                    <li><a href="../index.html" class="footer__social-link"><img
+                                src="../assets/icons/instagram-light.svg" alt="Instagram" loading="lazy"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer__bottom-text">
+                <span class="footer__separator"></span>
+                <p class="footer__festival">projet réalisé en 2025 dans le cadre d’un exercice pédagogique au
+                    département
+                    <a href="https://www.iut-nfc.univ-fcomte.fr/" target="_blank" rel="noopener noreferrer">MMi de
+                        Montbéliard</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

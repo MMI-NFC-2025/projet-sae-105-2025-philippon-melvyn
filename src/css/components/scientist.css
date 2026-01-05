@@ -1,0 +1,36 @@
+/* =========================================
+   Component: scientist
+   ========================================= */
+.scientist {
+    padding: 1.25rem 1.25rem 0;
+}
+
+.scientist__header {
+    margin-bottom: 0.75rem;
+}
+
+.scientist__title {
+    margin: 0;
+    font-family: var(--font-family-urbanist), system-ui, sans-serif;
+    font-size: var(--font-size-25);
+    font-weight: var(--font-weight-extrabold);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.scientist__figure {
+    margin: 0;
+}
+
+.scientist__img {
+    width: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+.scientist__caption {
+    margin: 0.8rem 0 0;
+    font-size: var(--font-size-15);
+    color: rgba(33, 33, 33, 0.9);
+}

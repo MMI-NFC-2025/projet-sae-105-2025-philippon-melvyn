@@ -1,0 +1,54 @@
+.watch {
+    padding: 0 1.25rem 2rem;
+}
+
+.watch__header {
+    margin: 0 0 0.75rem;
+}
+
+.watch__title {
+    margin: 0;
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+}
+
+.watch__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.watch__link {
+    display: grid;
+    grid-template-columns: 44px 1fr 70px;
+    align-items: center;
+    min-height: 52px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    background: var(--primary-100);
+}
+
+.watch__number {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    background: var(--primary-300);
+    color: var(--light);
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-bold);
+}
+
+.watch__arrow {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: var(--primary-400);
+    color: var(--light);
+    font-size: 1.1rem;
+} 

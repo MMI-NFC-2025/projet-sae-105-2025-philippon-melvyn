@@ -1,0 +1,29 @@
+/* =========================================
+   Component: matilda
+   ========================================= */
+.matilda {
+    padding: 1.75rem 1.25rem 1.25rem;
+}
+
+.matilda__header p {
+    margin: 0 0 1.25rem;
+    font-family: var(--font-family-urbanist), system-ui, sans-serif;
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.25;
+}
+
+.matilda__content {
+    display: grid;
+    gap: 1rem;
+}
+
+.matilda__text {
+    margin: 0;
+    font-size: var(--font-size-16);
+}
+
+.matilda__keyword {
+    color: var(--primary-300);
+    font-weight: var(--font-weight-bold);
+}

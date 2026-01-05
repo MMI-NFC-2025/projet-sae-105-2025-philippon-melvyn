@@ -1,0 +1,104 @@
+/* =========================================
+   Component: bioNav
+   ========================================= */
+.bioNav {
+    margin-top: 1rem;
+}
+
+.bioNav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.bioNav__item {
+    margin: 0;
+}
+
+.bioNav__link {
+    display: grid;
+    grid-template-columns: 44px 1fr 64px;
+    align-items: center;
+    min-height: 52px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(209, 229, 241, 0.55);
+    border: 1px solid rgba(28, 124, 209, 0.12);
+}
+
+.bioNav__number {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: var(--primary-300);
+    color: var(--light);
+    font-family: var(--font-family-roboto-condensed), system-ui, sans-serif;
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-bold);
+    justify-self: center;
+}
+
+.bioNav__label {
+    padding: 0 0.75rem 0 0.25rem;
+    font-family: var(--font-family-work-sans), system-ui, sans-serif;
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-semibold);
+    color: var(--accent-100);
+}
+
+.bioNav__arrow {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: var(--primary-500);
+    color: var(--light);
+    font-size: 1.1rem;
+}
+
+.bioNav__link:hover {
+    border-color: rgba(28, 124, 209, 0.28);
+}
+
+.bioNav__link:hover .bioNav__arrow {
+    background: var(--primary-400);
+}
+
+
+/* =========================================
+   Component: bio
+   ========================================= */
+.bio {
+    padding: 1.25rem;
+}
+
+.bio__header {
+    margin-bottom: 0.75rem;
+}
+
+.bio__title {
+    margin: 0;
+    font-family: var(--font-family-urbanist), system-ui, sans-serif;
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-extrabold);
+}
+
+.bio__card {
+    background: rgba(209, 229, 241, 0.35);
+    border: 1px solid rgba(28, 124, 209, 0.15);
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+.bio__text {
+    margin: 0;
+    font-size: var(--font-size-15);
+}
+
+.bio__text+.bio__text {
+    margin-top: 0.75rem;
+}
