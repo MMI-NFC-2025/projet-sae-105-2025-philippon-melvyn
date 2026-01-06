@@ -1,0 +1,75 @@
+/* =========================================
+   Component: Language Switcher
+   ========================================= */
+
+.lang-switcher {
+    position: relative;
+    z-index: 100;
+}
+
+.lang-switcher__btn {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.5rem 0.75rem;
+    background: transparent;
+    border: 2px solid var(--light);
+    border-radius: 4px;
+    color: var(--light);
+    font-family: var(--font-family-urbanist), system-ui, sans-serif;
+    font-size: 0.9rem;
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-switcher__btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.lang-switcher__btn[aria-expanded="true"] .lang-switcher__arrow {
+    transform: rotate(180deg);
+}
+
+.lang-switcher__current {
+    line-height: 1;
+}
+
+.lang-switcher__arrow {
+    font-size: 0.65rem;
+    transition: transform 0.3s ease;
+    line-height: 1;
+}
+
+.lang-switcher__menu {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    min-width: 100%;
+    background: var(--light);
+    border: 2px solid var(--primary-500);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.lang-switcher__menu[hidden] {
+    display: none;
+}
+
+.lang-switcher__link {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: var(--dark);
+    text-decoration: none;
+    font-family: var(--font-family-urbanist), system-ui, sans-serif;
+    font-weight: var(--font-weight-bold);
+    transition: background 0.2s ease;
+}
+
+.lang-switcher__link:hover {
+    background: var(--primary-100);
+}

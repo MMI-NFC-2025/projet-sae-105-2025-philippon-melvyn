@@ -2,304 +2,79 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQITA — Choisir la langue</title>
+
     <meta name="description"
-        content="AQITA met en lumière les femmes de science oubliées de l’histoire. Découvrez leurs parcours, leurs découvertes et l’effet Matilda à travers des récits, ressources et archives." />
-    <title>AQITA</title>
+        content="AQITA est un projet dédié aux femmes de science oubliées. Choisissez votre langue pour accéder au site." />
 
-    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
-    <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
-    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+    <link rel="alternate" hreflang="fr" href="/fr/index.html">
+    <link rel="alternate" hreflang="en" href="/en/index.html">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #0b2340;
+            color: #ffffff;
+        }
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
+        .language {
+            text-align: center;
+        }
 
-    <link rel="stylesheet" href="src/css/style.css" />
-    <script type="module" src="src/js/script.js"></script>
+        .language__title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .language__list {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .language__link {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 999px;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .language__link:hover {
+            background-color: #ffffff;
+            color: #0b2340;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="header">
-        <a class="header__link" href="/">
-            <img src="assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" />
-        </a>
-        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-        </button>
+    <main class="language" role="main">
+        <h1 class="language__title">Choisissez votre langue</h1>
 
-        <nav class="menu" id="mainNav" aria-hidden="true">
-            <button class="menu__close" aria-label="Fermer le menu">✕</button>
-            <ul class="menu__list">
-                <li class="menu__item menu__item--logo">
-                    <a href="index.html" class="header__logo">
-                        <img src="assets/icons/Logo_AQITA_Light.svg" alt="" class="header__logo-image"
-                            aria-hidden="true">
-                        <span>AQITA</span>
+        <nav aria-label="Sélecteur de langue">
+            <ul class="language__list">
+                <li>
+                    <a class="language__link" href="/fr/index.html" lang="fr">
+                        Français
                     </a>
                 </li>
-                <li class="menu__item"><a class="menu__link" href="fr/chercheuse.html">SON HISTOIRE</a></li>
-                <li class="menu__item"><a class="menu__link" href="fr/Sathese.html">SES ÉCRIT</a></li>
-                <li class="menu__item"><a class="menu__link" href="fr/Lesgrandesoubliée.html">LES GRANDES OUBLIÉES</a>
+                <li>
+                    <a class="language__link" href="/en/index.html" lang="en">
+                        English
+                    </a>
                 </li>
-                <li class="menu__item"><a class="menu__link" href="fr/Film.html">PICTURE A SCIENTIST</a></li>
-                <li class="menu__item"><a class="menu__link" href="fr/Lespionnieres.html">LES PIONNIÈRES</a></li>
-                <li class="menu__item"><a class="menu__link" href="fr/Lhistoiredesfemmes.html">L'HISTOIRE DES FEMMES</a>
-                </li>
-                <li class="menu__item"><a class="menu__link" href="fr/Galerie.html">ARCHIVES</a></li>
-                <li class="menu__item"><a class="menu__link" href="fr/Contact.html">CONTACT</a></li>
             </ul>
         </nav>
-    </header>
-
-    <main class="homePage" id="main-content">
-        <section class="homeHero">
-            <div class="homeHero__media">
-                <img class="homeHero__img" src="/assets/img/imgHeader_accueil.avif"
-                    alt="Illustration de la page d’accueil" fetchpriority="high" />
-                <a class="homeHero__scroll" href="#intro" aria-label="Aller au contenu">
-                    <span class="homeHero__scrollIcon" aria-hidden="true">⌄</span>
-                </a>
-            </div>
-
-            <div class="homeHero__content">
-                <h1 class="homeHero__title">Celles qu'on a oubliées</h1>
-            </div>
-        </section>
-
-        <section class="matilda">
-            <header class="matilda__header">
-                <p>La science n’a pas de frontières,
-                    mais les scientifiques en ont.</p>
-            </header>
-
-            <div class="matilda__content">
-                <p class="matilda__text">
-                    Une <span class="matilda__keyword">Matilda</span>, c’est une femme de science dont le nom s’est
-                    effacé,
-                    mais dont les découvertes ont changé le monde. Trop souvent, leurs contributions ont été minimisées,
-                    attribuées à d’autres ou simplement oubliées.
-                </p>
-
-                <p class="matilda__text">
-                    Ici, nous voulons leur rendre justice. Faire connaître leurs histoires, leurs luttes, leurs
-                    réussites.
-                    Montrer que la science s’est aussi écrite au féminin, même si l’histoire ne l’a pas toujours
-                    reconnu.
-                    Parce qu’honorer ces femmes, c’est inspirer celles et ceux qui écrivent la science d’aujourd’hui.
-                </p>
-            </div>
-        </section>
-
-        <section class="scientist">
-            <header class="scientist__header">
-                <h2 class="scientist__title">Marietta Blau</h2>
-            </header>
-
-            <figure class="scientist__figure">
-                <img class="scientist__img" src="/assets/img/imgHeader_chercheuse.avif" alt="Portrait de Marietta Blau"
-                    loading="lazy" />
-                <figcaption class="scientist__caption">
-                    Marietta Blau a marqué la physique, mais son nom reste méconnu. Découvrez son incroyable parcours et
-                    ses
-                    découvertes oubliées.
-                </figcaption>
-            </figure>
-        </section>
-
-        <section class="bio">
-            <header class="bio__header">
-                <h3 class="bio__title">Biographie</h3>
-            </header>
-
-            <div class="bio__card">
-                <p class="bio__text">
-                    Marietta Blau est une physicienne autrichienne pionnière en physique nucléaire. Elle a développé une
-                    méthode
-                    photographique pour détecter et étudier les particules à haute énergie.
-                </p>
-
-                <p class="bio__text">
-                    Ses recherches sur les rayons cosmiques et la désintégration nucléaire lui ont valu une
-                    reconnaissance
-                    internationale. Pourtant, son héritage a longtemps été sous-estimé, à cause de son exil forcé durant
-                    la
-                    Seconde Guerre mondiale.
-                </p>
-            </div>
-
-            <nav class="bioNav" aria-label="Explorer Marietta Blau">
-                <ol class="bioNav__list">
-                    <li class="bioNav__item">
-                        <a class="bioNav__link" href="fr/chercheuse.html">
-                            <span class="bioNav__number" aria-hidden="true">1</span>
-                            <span class="bioNav__label">Son histoire</span>
-                            <span class="bioNav__arrow" aria-hidden="true">→</span>
-                        </a>
-                    </li>
-
-                    <li class="bioNav__item">
-                        <a class="bioNav__link" href="fr/Sathese.html">
-                            <span class="bioNav__number" aria-hidden="true">2</span>
-                            <span class="bioNav__label">Ses écrits</span>
-                            <span class="bioNav__arrow" aria-hidden="true">→</span>
-                        </a>
-                    </li>
-                </ol>
-            </nav>
-        </section>
-
-        <section class="discover">
-            <header class="discover__header">
-                <h2 class="discover__title">Découvre également</h2>
-            </header>
-
-            <div class="discover__list">
-                <article class="discoverCard">
-                    <div class="discoverCard__media">
-                        <img class="discoverCard__img" src="/assets/img/imgpage_Lesgrandesoubliées.avif" alt=""
-                            loading="lazy" />
-                    </div>
-
-                    <div class="discoverCard__content">
-                        <h3 class="discoverCard__title">Les grandes oubliées</h3>
-                        <p class="discoverCard__text">
-                            Plonge dans les histoires de femmes scientifiques effacées des manuels, mais essentielles à
-                            l’histoire des
-                            découvertes.
-                        </p>
-                        <a class="discoverCard__link" href="fr/Lesgrandesoubliée.html">
-                            En savoir plus <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="discoverCard">
-                    <div class="discoverCard__media">
-                        <img class="discoverCard__img" src="/assets/img/imgpage_Film.avif" alt="" loading="lazy" />
-                    </div>
-
-                    <div class="discoverCard__content">
-                        <h3 class="discoverCard__title">Picture a scientist</h3>
-                        <p class="discoverCard__text">
-                            Un documentaire puissant qui révèle les obstacles et les victoires des femmes dans la
-                            recherche
-                            scientifique moderne.
-                        </p>
-                        <a class="discoverCard__link" href="fr/Film.html">
-                            En savoir plus <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="discoverCard">
-                    <div class="discoverCard__media">
-                        <img class="discoverCard__img" src="/assets/img/imgpage_Pionnières.avif" alt=""
-                            loading="lazy" />
-                    </div>
-
-                    <div class="discoverCard__content">
-                        <h3 class="discoverCard__title">Les pionnières</h3>
-                        <p class="discoverCard__text">
-                            Découvre les parcours inspirants de femmes de science qui ont changé le monde, souvent dans
-                            l’ombre des
-                            hommes.
-                        </p>
-                        <a class="discoverCard__link" href="fr/Lespionnieres.html">
-                            En savoir plus <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="timeline">
-            <p class="timeline__text">
-                Marietta Blau n’est pas la première à voir ses découvertes effacées de l’histoire. Depuis toujours, de
-                nombreuses
-                femmes ont contribué à la science, souvent dans l’ombre. Notre frise des Matilda retrace ces parcours
-                oubliés et
-                rend visibles celles qui ont marqué la science.
-            </p>
-
-            <div class="timelineCta">
-                <div class="timelineCta__media">
-                    <img class="timelineCta__img" src="/assets/img/imgHeader_Frise.avif" alt="" loading="lazy" />
-                </div>
-
-                <div class="timelineCta__content">
-                    <h3 class="timelineCta__title">L’HISTOIRE DES FEMMES</h3>
-                    <p class="timelineCta__text">
-                        Découvrez la frise des anciennes Matilda : celles qui ont changé la science, mais dont
-                        l’histoire a
-                        oublié le
-                        nom.
-                    </p>
-                    <a class="timelineCta__link" href="fr/Lhistoiredesfemmes.html">
-                        En savoir plus <span aria-hidden="true">→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
     </main>
-
-    <footer class="footer" aria-label="Pied de page">
-
-        <div class="footer__content">
-
-            <div class="footer__logo">
-                <a href="/index.html" class="footer__logo-link">
-                    <img src="/assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" class="footer__logo-img"
-                        loading="lazy">
-                </a>
-            </div>
-
-            <nav class="footer__menu" aria-label="Menu du footer">
-                <h3 class="footer__menu-title">MENU</h3>
-                <ul class="footer__menu-list">
-                    <li class="footer__menu-item"><a href="fr/Quisommenous.html" class="footer__menu-link">Qui somme nous
-                        </a> |</li>
-                    <li class="footer__menu-item"><a href="fr/Ressource.html" class="footer__menu-link">Ressources </a> |
-                    </li>
-                    <li class="footer__menu-item"><a href="fr/lexique.html" class="footer__menu-link">Lexique </a> |</li>
-                    <li class="footer__menu-item"><a href="fr/contact.html" class="footer__menu-link">Contact </a> |</li>
-                </ul>
-            </nav>
-
-            <div class="footer__socials">
-                <span class="footer__separator"></span>
-                <h3 class="footer__socials-title">SUIVEZ NOUS</h3>
-                <ul class="footer__socials-list">
-                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/youtube-light.svg" alt="youtube"
-                                loading="lazy"></a></li>
-                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/discord-light.svg" alt="discord"
-                                loading="lazy"></a></li>
-                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/facebook-light.svg"
-                                alt="facebook" loading="lazy"></a></li>
-                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/tiktok-light.svg" alt="TikTok"
-                                loading="lazy"></a></li>
-                    <li><a href="/" class="footer__social-link"><img src="/assets/icons/instagram-light.svg"
-                                alt="Instagram" loading="lazy"></a></li>
-                </ul>
-            </div>
-
-            <div class="footer__bottom-text">
-                <span class="footer__separator"></span>
-                <p class="footer__festival">projet réalisé en 2025 dans le cadre d’un exercice pédagogique au
-                    département <a href="https://www.iut-nfc.univ-fcomte.fr/" target="_blank"
-                        rel="noopener noreferrer">MMi de Montbéliard</a></p>
-            </div>
-        </div>
-    </footer>
-
 </body>
 
 </html>

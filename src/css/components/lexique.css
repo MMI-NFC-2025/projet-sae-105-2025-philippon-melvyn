@@ -1,0 +1,110 @@
+.lexiconIntro {
+    padding: 1.5rem 1.25rem 0.75rem;
+}
+
+.lexiconIntro__text {
+    margin: 0;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.lexiconList {
+    padding: 0.75rem 1.25rem 2.25rem;
+}
+
+.lexiconList__groups {
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+}
+
+.lexiconGroup {
+    --group-color: var(--primary-400);
+    position: relative;
+}
+
+.lexiconGroup:nth-child(1) {
+    --group-color: var(--primary-400);
+}
+
+.lexiconGroup:nth-child(2) {
+    --group-color: var(--primary-300);
+}
+
+.lexiconGroup:nth-child(3) {
+    --group-color: var(--primary-200);
+}
+
+.lexiconGroup:nth-child(4) {
+    --group-color: var(--primary-400);
+}
+
+.lexiconGroup:nth-child(5) {
+    --group-color: var(--primary-300);
+}
+
+.lexiconGroup:nth-child(6) {
+    --group-color: var(--primary-200);
+}
+
+.lexiconGroup:nth-child(7) {
+    --group-color: var(--primary-400);
+}
+
+.lexiconGroup:nth-child(8) {
+    --group-color: var(--primary-300);
+}
+
+.lexiconGroup:nth-child(9) {
+    --group-color: var(--primary-200);
+}
+
+.lexiconGroup__badge {
+    position: absolute;
+    top: -1.5rem;
+    left: -0.15rem;
+    width: 3.1rem;
+    height: 3.1rem;
+    border-radius: 0.75rem;
+    background: var(--group-color);
+    display: grid;
+    place-items: center;
+    box-shadow: 0 10px 18px rgba(13, 12, 12, 0.18);
+    z-index: 2;
+}
+
+.lexiconGroup__letter {
+    font-family: var(--font-family-roboto-condensed);
+    font-weight: var(--font-weight-extrabold);
+    font-size: 1.35rem;
+    line-height: 1;
+    color: var(--light-100);
+}
+
+.lexiconGroup__card {
+    position: relative;
+    border-radius: 0.85rem;
+    background: var(--light-100);
+    padding: 1.15rem 1.1rem 1rem;
+    box-shadow: 0 12px 20px rgba(13, 12, 12, 0.18);
+    overflow: hidden;
+}
+
+.lexiconGroup__card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.9rem;
+    background: var(--group-color);
+}
+
+.lexiconGroup__item+.lexiconGroup__item {
+    margin-top: 0.85rem;
+}
+
+.lexiconGroup__term {
+    font-weight: var(--font-weight-semibold);
+    color: var(--group-color);
+}

@@ -7,45 +7,39 @@
     <meta name="description"
         content="Découvrez des récits et ouvrages consacrés aux pionnières de la science, des femmes dont les parcours et découvertes ont longtemps été invisibilisés." />
     <title>Les Pionnières - AQITA</title>
-
     <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="../assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
     <link rel="manifest" href="../assets/favicons/site.webmanifest" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
-
     <link rel="stylesheet" href="../src/css/style.css" />
     <script type="module" src="../src/js/script.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a class="header__link" href="../index.html">
-            <img src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" />
-        </a>
-        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-        </button>
-
-        <nav class="menu" id="mainNav" aria-hidden="true">
-            <button class="menu__close" aria-label="Fermer le menu">✕</button>
+    <header class="header"> <a class="header__link" href="./index.html"> <img src="../assets/icons/Logo_AQITA_Light.svg"
+                alt="Logo du site AQITA" /> </a>
+        <div class="lang-switcher"> <button class="lang-switcher__btn" aria-label="Changer de langue"
+                aria-expanded="false"> <span class="lang-switcher__current">FR</span> <span class="lang-switcher__arrow"
+                    aria-hidden="true">▼</span> </button>
+            <ul class="lang-switcher__menu" hidden>
+                <li><a href="../en/thepioneers.html" class="lang-switcher__link">EN</a></li>
+            </ul>
+        </div> <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"> <span
+                aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span> <span aria-hidden="true"
+                class="menu-btn__bar menu-btn__bar--light"></span> <span aria-hidden="true"
+                class="menu-btn__bar menu-btn__bar--light"></span> </button>
+        <nav class="menu" id="mainNav" aria-hidden="true"> <button class="menu__close"
+                aria-label="Fermer le menu">✕</button>
             <ul class="menu__list">
-                <li class="menu__item menu__item--logo">
-                    <a href="../index.html" class="header__logo">
-                        <img src="../assets/icons/Logo_AQITA_Light.svg" alt="" class="header__logo-image"
-                            aria-hidden="true">
-                        <span>AQITA</span>
-                    </a>
-                </li>
+                <li class="menu__item menu__item--logo"> <a href="./index.html" class="header__logo"> <img
+                            src="../assets/icons/Logo_AQITA_Light.svg" alt="" class="header__logo-image"
+                            aria-hidden="true"> <span>AQITA</span> </a> </li>
                 <li class="menu__item"><a class="menu__link" href="chercheuse.html">SON HISTOIRE</a></li>
                 <li class="menu__item"><a class="menu__link" href="Sathese.html">SES ÉCRIT</a></li>
                 <li class="menu__item"><a class="menu__link" href="Lesgrandesoubliée.html">LES GRANDES OUBLIÉES</a>
@@ -59,46 +53,28 @@
             </ul>
         </nav>
     </header>
-
     <main class="pioneersPage" id="main-content">
         <section class="pioneersIntro" aria-labelledby="pioneers-title">
             <h1 class="pioneersIntro__title" id="pioneers-title">Les pionnières</h1>
-
-            <p class="pioneersIntro__text">
-                Depuis l’Antiquité jusqu’à aujourd’hui, de nombreuses femmes ont marqué la science, mais leur histoire
-                reste
-                souvent méconnue.
-            </p>
-
-            <p class="pioneersIntro__text">
-                La littérature scientifique et historique permet de redonner vie à ces parcours exceptionnels. Découvrez
-                biographies, essais et récits qui célèbrent les femmes de science, leurs découvertes et les obstacles
-                qu’elles ont
-                surmontés pour contribuer au savoir humain.
-            </p>
+            <p class="pioneersIntro__text"> Depuis l’Antiquité jusqu’à aujourd’hui, de nombreuses femmes ont marqué la
+                science, mais leur histoire reste souvent méconnue. </p>
+            <p class="pioneersIntro__text"> La littérature scientifique et historique permet de redonner vie à ces
+                parcours exceptionnels. Découvrez biographies, essais et récits qui célèbrent les femmes de science,
+                leurs découvertes et les obstacles qu’elles ont surmontés pour contribuer au savoir humain. </p>
         </section>
-
         <section class="pioneersFocus" aria-label="Focus sur les pionnières">
-
-            <div class="pioneersFocus__media">
-                <img class="pioneersFocus__img" src="../assets/img/imgpage_Pionnières.avif"
-                    alt="Photographie ancienne de femmes scientifiques" loading="lazy" />
-            </div>
-
+            <div class="pioneersFocus__media"> <img class="pioneersFocus__img"
+                    src="../assets/img/imgpage_Pionnières.avif" alt="Photographie ancienne de femmes scientifiques"
+                    loading="lazy" /> </div>
             <div class="pioneersFocus__content">
-                <p class="pioneersFocus__text">
-                    Redonnez voix aux femmes effacées de l’histoire et découvrez leurs parcours fascinants à travers cet
-                    essai
-                    passionnant. Une anthologie qui retrace la vie de femmes qui ont marqué la science malgré les
-                    obstacles.
-                    L’histoire vraie des femmes afro-américaines qui ont permis les grandes réussites de la NASA.
-                </p>
+                <p class="pioneersFocus__text"> Redonnez voix aux femmes effacées de l’histoire et découvrez leurs
+                    parcours fascinants à travers cet essai passionnant. Une anthologie qui retrace la vie de femmes qui
+                    ont marqué la science malgré les obstacles. L’histoire vraie des femmes afro-américaines qui ont
+                    permis les grandes réussites de la NASA. </p>
             </div>
         </section>
-
         <section class="pioneersThemes" aria-labelledby="pioneers-themes-title">
             <h2 class="pioneersThemes__title" id="pioneers-themes-title">Thème fort</h2>
-
             <ul class="pioneersThemes__list">
                 <li class="pioneersThemes__item pioneersThemes__item--primary">Discrimination</li>
                 <li class="pioneersThemes__item pioneersThemes__item--secondary">Persévérance</li>
@@ -106,90 +82,51 @@
                 <li class="pioneersThemes__item pioneersThemes__item--dark">Transmission</li>
             </ul>
         </section>
-
         <section class="pioneersExplore" aria-labelledby="pioneers-explore-title">
             <h3 class="pioneersExplore__title" id="pioneers-explore-title">Continuez votre exploration</h3>
-
             <ol class="pioneersExplore__list">
-                <li class="pioneersExplore__item">
-                    <a class="pioneersExplore__link" href="chercheuse.html">
-                        <span class="pioneersExplore__number" aria-hidden="true">1</span>
-                        <span class="pioneersExplore__label">Son histoire</span>
-                        <span class="pioneersExplore__arrow" aria-hidden="true">→</span>
-                    </a>
-                </li>
-
-                <li class="pioneersExplore__item">
-                    <a class="pioneersExplore__link" href="Lesgrandesoubliée.html">
-                        <span class="pioneersExplore__number" aria-hidden="true">2</span>
-                        <span class="pioneersExplore__label">Les grandes oubliées</span>
-                        <span class="pioneersExplore__arrow" aria-hidden="true">→</span>
-                    </a>
-                </li>
-
-                <li class="pioneersExplore__item">
-                    <a class="pioneersExplore__link" href="lexique.html">
-                        <span class="pioneersExplore__number" aria-hidden="true">3</span>
-                        <span class="pioneersExplore__label">Lexique</span>
-                        <span class="pioneersExplore__arrow" aria-hidden="true">→</span>
-                    </a>
-                </li>
-
-                <li class="pioneersExplore__item">
-                    <a class="pioneersExplore__link" href="Lhistoiredesfemmes.html">
-                        <span class="pioneersExplore__number" aria-hidden="true">4</span>
-                        <span class="pioneersExplore__label">L’histoire des femmes</span>
-                        <span class="pioneersExplore__arrow" aria-hidden="true">→</span>
-                    </a>
-                </li>
+                <li class="pioneersExplore__item"> <a class="pioneersExplore__link" href="chercheuse.html"> <span
+                            class="pioneersExplore__number" aria-hidden="true">1</span> <span
+                            class="pioneersExplore__label">Son histoire</span> <span class="pioneersExplore__arrow"
+                            aria-hidden="true">→</span> </a> </li>
+                <li class="pioneersExplore__item"> <a class="pioneersExplore__link" href="Lesgrandesoubliée.html"> <span
+                            class="pioneersExplore__number" aria-hidden="true">2</span> <span
+                            class="pioneersExplore__label">Les grandes oubliées</span> <span
+                            class="pioneersExplore__arrow" aria-hidden="true">→</span> </a> </li>
+                <li class="pioneersExplore__item"> <a class="pioneersExplore__link" href="lexique.html"> <span
+                            class="pioneersExplore__number" aria-hidden="true">3</span> <span
+                            class="pioneersExplore__label">Lexique</span> <span class="pioneersExplore__arrow"
+                            aria-hidden="true">→</span> </a> </li>
+                <li class="pioneersExplore__item"> <a class="pioneersExplore__link" href="Lhistoiredesfemmes.html">
+                        <span class="pioneersExplore__number" aria-hidden="true">4</span> <span
+                            class="pioneersExplore__label">L’histoire des femmes</span> <span
+                            class="pioneersExplore__arrow" aria-hidden="true">→</span> </a> </li>
             </ol>
         </section>
-
         <section class="pioneersOutro" aria-label="Conclusion">
-
-            <p class="pioneersOutro__text">
-                Lire des histoires de femmes scientifiques permet de changer la perception des sciences et de montrer
-                que le
-                talent
-                n’a pas de genre.
-            </p>
-
-            <p class="pioneersOutro__text">
-                Ces récits offrent des modèles pour les jeunes générations et réduisent les stéréotypes, en montrant que
-                la
-                science
-                est ouverte à toutes et tous.
-            </p>
+            <p class="pioneersOutro__text"> Lire des histoires de femmes scientifiques permet de changer la perception
+                des sciences et de montrer que le talent n’a pas de genre. </p>
+            <p class="pioneersOutro__text"> Ces récits offrent des modèles pour les jeunes générations et réduisent les
+                stéréotypes, en montrant que la science est ouverte à toutes et tous. </p>
         </section>
     </main>
-
-
     <footer class="footer" aria-label="Pied de page">
-
         <div class="footer__content">
-
-            <div class="footer__logo">
-                <a href="../index.html" class="footer__logo-link">
-                    <img src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" class="footer__logo-img"
-                        loading="lazy">
-                </a>
-            </div>
-
+            <div class="footer__logo"> <a href="./index.html" class="footer__logo-link"> <img
+                        src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" class="footer__logo-img"
+                        loading="lazy"> </a> </div>
             <nav class="footer__menu" aria-label="Menu du footer">
                 <h3 class="footer__menu-title">MENU</h3>
                 <ul class="footer__menu-list">
                     <li class="footer__menu-item"><a href="Quisommenous.html" class="footer__menu-link">Qui somme nous
-                        </a>
-                        |</li>
+                        </a> |</li>
                     <li class="footer__menu-item"><a href="Ressource.html" class="footer__menu-link">Ressources </a> |
                     </li>
                     <li class="footer__menu-item"><a href="lexique.html" class="footer__menu-link">Lexique </a> |</li>
                     <li class="footer__menu-item"><a href="contact.html" class="footer__menu-link">Contact </a> |</li>
                 </ul>
             </nav>
-
-            <div class="footer__socials">
-                <span class="footer__separator"></span>
+            <div class="footer__socials"> <span class="footer__separator"></span>
                 <h3 class="footer__socials-title">SUIVEZ NOUS</h3>
                 <ul class="footer__socials-list">
                     <li><a href="../index.html" class="footer__social-link"><img src="../assets/icons/youtube-light.svg"
@@ -204,18 +141,13 @@
                                 src="../assets/icons/instagram-light.svg" alt="Instagram" loading="lazy"></a></li>
                 </ul>
             </div>
-
-            <div class="footer__bottom-text">
-                <span class="footer__separator"></span>
+            <div class="footer__bottom-text"> <span class="footer__separator"></span>
                 <p class="footer__festival">projet réalisé en 2025 dans le cadre d’un exercice pédagogique au
-                    département
-                    <a href="https://www.iut-nfc.univ-fcomte.fr/" target="_blank" rel="noopener noreferrer">MMi de
-                        Montbéliard</a>
-                </p>
+                    département <a href="https://www.iut-nfc.univ-fcomte.fr/" target="_blank"
+                        rel="noopener noreferrer">MMi de Montbéliard</a> </p>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

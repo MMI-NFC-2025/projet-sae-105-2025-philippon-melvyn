@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Explore the AQITA gallery: a selection of films, documentaries, and works highlighting women and their place in the history of science." />
+    <title>Archives - AQITA</title>
+
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/favicons/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <script type="module" src="../src/js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__link" href="./index.html">
+            <img src="../assets/icons/Logo_AQITA_Light.svg" alt="AQITA website logo" />
+        </a>
+        <div class="lang-switcher">
+            <button class="lang-switcher__btn" aria-label="Change language" aria-expanded="false">
+                <span class="lang-switcher__current">EN</span>
+                <span class="lang-switcher__arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="lang-switcher__menu" hidden>
+                <li><a href="../fr/Galerie.html" class="lang-switcher__link">FR</a></li>
+            </ul>
+        </div>
+        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
+            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
+        </button>
+
+        <nav class="menu" id="mainNav" aria-hidden="true">
+            <button class="menu__close" aria-label="Close menu">✕</button>
+            <ul class="menu__list">
+                <li class="menu__item menu__item--logo">
+                    <a href="./index.html" class="header__logo">
+                        <img src="../assets/icons/Logo_AQITA_Light.svg" alt="" class="header__logo-image"
+                            aria-hidden="true">
+                        <span>AQITA</span>
+                    </a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="herstory.html">HER STORY</a></li>
+                <li class="menu__item"><a class="menu__link" href="herwritings.html">HER WRITINGS</a></li>
+                <li class="menu__item"><a class="menu__link" href="theforgottenwomen.html">THE FORGOTTEN WOMEN</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="pictureascientist.html">PICTURE A SCIENTIST</a></li>
+                <li class="menu__item"><a class="menu__link" href="thepioneers.html">THE PIONEERS</a></li>
+                <li class="menu__item"><a class="menu__link" href="womenshistory.html">WOMEN’S HISTORY</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="archives.html">ARCHIVES</a></li>
+                <li class="menu__item"><a class="menu__link" href="Contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="archivesPage" id="main-content">
+
+        <section class="archivesIntro" aria-labelledby="archives-title">
+            <h1 class="archivesIntro__title" id="archives-title">Archives</h1>
+
+            <p class="archivesIntro__text">
+                Explore a selection of films, series, and documentaries about women and science.
+                These works highlight their journeys, struggles, and the discoveries that changed the way we see the
+                world.
+            </p>
+        </section>
+
+        <section class="archivesCarousel" aria-labelledby="archives-carousel-title">
+            <h2 class="archivesCarousel__title" id="archives-carousel-title">Gallery</h2>
+
+            <div class="archivesCarousel__viewport">
+                <button class="archivesCarousel__control archivesCarousel__control--prev" type="button"
+                    aria-label="Previous work">
+                    <span aria-hidden="true">‹</span>
+                </button>
+
+                <div class="archivesCarousel__track" aria-label="Works carousel">
+                    <div class="archivesCarousel__slide archivesCarousel__slide--active" data-index="0">
+                        <img class="archivesCarousel__img" src="../assets/img/imgCarousel_Lesfiguresdel'ombre.avif"
+                            alt="Poster: Hidden Figures" />
+                        <p class="archivesCarousel__caption">Hidden Figures</p>
+                    </div>
+
+                    <div class="archivesCarousel__slide" data-index="1" hidden>
+                        <img class="archivesCarousel__img" src="../assets/img/imgCarousel_Radioactive.avif"
+                            alt="Poster: Radioactive" loading="lazy" />
+                        <p class="archivesCarousel__caption">Radioactive</p>
+                    </div>
+
+                    <div class="archivesCarousel__slide" data-index="2" hidden>
+                        <img class="archivesCarousel__img" src="../assets/img/imgCarousel_Agora.avif"
+                            alt="Poster: Agora" loading="lazy" />
+                        <p class="archivesCarousel__caption">Agora</p>
+                    </div>
+
+                    <div class="archivesCarousel__slide" data-index="3" hidden>
+                        <img class="archivesCarousel__img" src="../assets/img/imgCarousel_Ammonite.avif"
+                            alt="Poster: Ammonite" loading="lazy" />
+                        <p class="archivesCarousel__caption">Ammonite</p>
+                    </div>
+
+                    <div class="archivesCarousel__slide" data-index="4" hidden>
+                        <img class="archivesCarousel__img" src="../assets/img/imgCarousel_Fireoflove.avif"
+                            alt="Poster: Fire of love" loading="lazy" />
+                        <p class="archivesCarousel__caption">Fire of love</p>
+                    </div>
+
+                    <div class="archivesCarousel__slide" data-index="5" hidden>
+                        <img class="archivesCarousel__img" src="../assets/img/imgCarousel_AtomicMom.avif"
+                            alt="Poster: Atomic Mom" loading="lazy" />
+                        <p class="archivesCarousel__caption">Atomic Mom</p>
+                    </div>
+
+                    <div class="archivesCarousel__slide" data-index="6" hidden>
+                        <img class="archivesCarousel__img" src="../assets/img/imgCarousel_TheUprising.avif"
+                            alt="Poster: The Uprising" loading="lazy" />
+                        <p class="archivesCarousel__caption">The Uprising</p>
+                    </div>
+
+                </div>
+
+                <button class="archivesCarousel__control archivesCarousel__control--next" type="button"
+                    aria-label="Next work">
+                    <span aria-hidden="true">›</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="archivesDetails" aria-labelledby="archives-details-title">
+            <h2 class="archivesDetails__title" id="archives-details-title">Hidden Figures</h2>
+
+            <h3 class="archivesDetails__subtitle">Synopsis</h3>
+            <p class="archivesDetails__text">
+                Three African-American mathematicians, Katherine Johnson, Dorothy Vaughan, and Mary Jackson played a
+                crucial role in
+                NASA’s space program, overcoming obstacles of racism and sexism.
+            </p>
+
+            <div class="archivesDetails__info">
+                <div class="archivesDetails__row">
+                    <p class="archivesDetails__label">Director :</p>
+                    <p class="archivesDetails__value">Theodore Melfi</p>
+                </div>
+
+                <div class="archivesDetails__row">
+                    <p class="archivesDetails__label">Year :</p>
+                    <p class="archivesDetails__value">2016</p>
+                </div>
+
+                <div class="archivesDetails__row">
+                    <p class="archivesDetails__label">Language :</p>
+                    <p class="archivesDetails__value">English</p>
+                </div>
+            </div>
+
+            <a class="archivesDetails__button" href="/#">
+                Learn more <span aria-hidden="true">→</span>
+            </a>
+        </section>
+
+        <section class="archivesData" aria-label="Works data" hidden>
+            <div class="archivesData__item" data-index="0">
+                <p class="archivesData__title">Hidden Figures</p>
+                <p class="archivesData__synopsis">
+                    Three African-American mathematicians, Katherine Johnson, Dorothy Vaughan, and Mary Jackson played a
+                    crucial role in
+                    NASA’s space program, overcoming obstacles of racism and sexism.
+                </p>
+                <p class="archivesData__director">Theodore Melfi</p>
+                <p class="archivesData__year">2016</p>
+                <p class="archivesData__language">English</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+
+            <div class="archivesData__item" data-index="1">
+                <p class="archivesData__title">Radioactive</p>
+                <p class="archivesData__synopsis">A biopic of Marie Curie, exploring her discovery of radium and her
+                    contributions to science, while highlighting the personal and professional challenges she faced.</p>
+                <p class="archivesData__director">Marjane Satrapi</p>
+                <p class="archivesData__year">2019</p>
+                <p class="archivesData__language">English</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+
+            <div class="archivesData__item" data-index="2">
+                <p class="archivesData__title">Agora</p>
+                <p class="archivesData__synopsis">The story of the astronomer Hypatia of Alexandria in the 4th century,
+                    who fights to preserve scientific knowledge in the face of religious intolerance.</p>
+                <p class="archivesData__director">Alejandro Amenábar</p>
+                <p class="archivesData__year">2009</p>
+                <p class="archivesData__language">Spanish, English</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+
+            <div class="archivesData__item" data-index="3">
+                <p class="archivesData__title">Ammonite</p>
+                <p class="archivesData__synopsis">A fictional story inspired by the life of paleontologist Mary Anning,
+                    exploring her scientific discoveries and her relationship with Charlotte Murchison.</p>
+                <p class="archivesData__director">Francis Lee</p>
+                <p class="archivesData__year">2020</p>
+                <p class="archivesData__language">English</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+
+            <div class="archivesData__item" data-index="4">
+                <p class="archivesData__title">Fire of love</p>
+                <p class="archivesData__synopsis">A documentary about French volcanologists Katia and Maurice Krafft,
+                    who devoted their lives to studying volcanoes before dying in an eruption in 1991.</p>
+                <p class="archivesData__director">Sara Dosa</p>
+                <p class="archivesData__year">2022</p>
+                <p class="archivesData__language">English</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+
+            <div class="archivesData__item" data-index="5">
+                <p class="archivesData__title">Atomic Mom</p>
+                <p class="archivesData__synopsis">A meeting between Pauline Silvia, an American biologist who worked on
+                    nuclear tests, and Emiko Okada, a Hiroshima survivor, exploring the human impact of nuclear weapons.
+                </p>
+                <p class="archivesData__director">M.T. Silvia</p>
+                <p class="archivesData__year">2010</p>
+                <p class="archivesData__language">English, Japanese</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+
+            <div class="archivesData__item" data-index="6">
+                <p class="archivesData__title">The Uprising</p>
+                <p class="archivesData__synopsis">A 13-minute documentary about the 1999 study on the status of women
+                    faculty at MIT, highlighting Nancy Hopkins’s efforts for gender equality in science.</p>
+                <p class="archivesData__director">Peter Snowdon</p>
+                <p class="archivesData__year">2021</p>
+                <p class="archivesData__language">English</p>
+                <p class="archivesData__href">/#</p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer" aria-label="Footer">
+
+        <div class="footer__content">
+
+            <div class="footer__logo">
+                <a href="./index.html" class="footer__logo-link">
+                    <img src="../assets/icons/Logo_AQITA_Light.svg" alt="AQITA website logo" class="footer__logo-img"
+                        loading="lazy">
+                </a>
+            </div>
+
+            <nav class="footer__menu" aria-label="Footer menu">
+                <h3 class="footer__menu-title">Menu</h3>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item"><a href="whoweare.html" class="footer__menu-link">Who we are
+                        </a>
+                        |</li>
+                    <li class="footer__menu-item"><a href="resources.html" class="footer__menu-link">Resources </a> |
+                    </li>
+                    <li class="footer__menu-item"><a href="glossary.html" class="footer__menu-link">Glossary </a> |</li>
+                    <li class="footer__menu-item"><a href="contact.html" class="footer__menu-link">Contact </a> |</li>
+                </ul>
+            </nav>
+
+            <div class="footer__socials">
+                <span class="footer__separator"></span>
+                <h3 class="footer__socials-title">FOLLOW US</h3>
+                <ul class="footer__socials-list">
+                    <li><a href="../index.html" class="footer__social-link"><img src="../assets/icons/youtube-light.svg"
+                                alt="YouTube" loading="lazy"></a></li>
+                    <li><a href="../index.html" class="footer__social-link"><img src="../assets/icons/discord-light.svg"
+                                alt="Discord" loading="lazy"></a></li>
+                    <li><a href="../index.html" class="footer__social-link"><img
+                                src="../assets/icons/facebook-light.svg" alt="Facebook" loading="lazy"></a></li>
+                    <li><a href="../index.html" class="footer__social-link"><img src="../assets/icons/tiktok-light.svg"
+                                alt="TikTok" loading="lazy"></a></li>
+                    <li><a href="../index.html" class="footer__social-link"><img
+                                src="../assets/icons/instagram-light.svg" alt="Instagram" loading="lazy"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer__bottom-text">
+                <span class="footer__separator"></span>
+                <p class="footer__festival">project completed in 2025 as part of an educational exercise at the
+                    <a href="https://www.iut-nfc.univ-fcomte.fr/" target="_blank" rel="noopener noreferrer">MMi
+                        department of Montbéliard</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

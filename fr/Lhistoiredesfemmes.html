@@ -7,45 +7,39 @@
     <meta name="description"
         content="Découvrez l’histoire des femmes scientifiques et l’effet Matilda à travers une frise chronologique de pionnières dont les découvertes ont été effacées ou minimisées." />
     <title>L'Histoire des Femmes - AQITA</title>
-
     <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="../assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
     <link rel="manifest" href="../assets/favicons/site.webmanifest" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
-
     <link rel="stylesheet" href="../src/css/style.css" />
     <script type="module" src="../src/js/script.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a class="header__link" href="../index.html">
-            <img src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" />
-        </a>
-        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-        </button>
-
-        <nav class="menu" id="mainNav" aria-hidden="true">
-            <button class="menu__close" aria-label="Fermer le menu">✕</button>
+    <header class="header"> <a class="header__link" href="./index.html"> <img src="../assets/icons/Logo_AQITA_Light.svg"
+                alt="Logo du site AQITA" /> </a>
+        <div class="lang-switcher"> <button class="lang-switcher__btn" aria-label="Changer de langue"
+                aria-expanded="false"> <span class="lang-switcher__current">FR</span> <span class="lang-switcher__arrow"
+                    aria-hidden="true">▼</span> </button>
+            <ul class="lang-switcher__menu" hidden>
+                <li><a href="../en/womenshistory.html" class="lang-switcher__link">EN</a></li>
+            </ul>
+        </div> <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"> <span
+                aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span> <span aria-hidden="true"
+                class="menu-btn__bar menu-btn__bar--light"></span> <span aria-hidden="true"
+                class="menu-btn__bar menu-btn__bar--light"></span> </button>
+        <nav class="menu" id="mainNav" aria-hidden="true"> <button class="menu__close"
+                aria-label="Fermer le menu">✕</button>
             <ul class="menu__list">
-                <li class="menu__item menu__item--logo">
-                    <a href="../index.html" class="header__logo">
-                        <img src="../assets/icons/Logo_AQITA_Light.svg" alt="" class="header__logo-image"
-                            aria-hidden="true">
-                        <span>AQITA</span>
-                    </a>
-                </li>
+                <li class="menu__item menu__item--logo"> <a href="./index.html" class="header__logo"> <img
+                            src="../assets/icons/Logo_AQITA_Light.svg" alt="" class="header__logo-image"
+                            aria-hidden="true"> <span>AQITA</span> </a> </li>
                 <li class="menu__item"><a class="menu__link" href="chercheuse.html">SON HISTOIRE</a></li>
                 <li class="menu__item"><a class="menu__link" href="Sathese.html">SES ÉCRIT</a></li>
                 <li class="menu__item"><a class="menu__link" href="Lesgrandesoubliée.html">LES GRANDES OUBLIÉES</a>
@@ -59,258 +53,139 @@
             </ul>
         </nav>
     </header>
-
     <main class="womenHistoryPage" id="main-content">
-
         <section class="womenHistoryHero" aria-labelledby="women-history-hero-title">
-            <div class="womenHistoryHero__media">
-                <img class="womenHistoryHero__img" src="../assets/img/imgHeader_Frise.avif"
-                    alt="Illustration de la justice et de l’égalité" fetchpriority="high" />
-            </div>
-
+            <div class="womenHistoryHero__media"> <img class="womenHistoryHero__img"
+                    src="../assets/img/imgHeader_Frise.avif" alt="Illustration de la justice et de l’égalité"
+                    fetchpriority="high" /> </div>
             <div class="womenHistoryHero__content">
-                <h1 class="womenHistoryHero__title" id="women-history-hero-title">L’histoire des femmes</h1>
-
-                <a class="womenHistoryHero__scroll" href="#women-history-content" aria-label="Aller au contenu">
-                    <span class="womenHistoryHero__scrollIcon" aria-hidden="true">⌄</span>
-                </a>
+                <h1 class="womenHistoryHero__title" id="women-history-hero-title">L’histoire des femmes</h1> <a
+                    class="womenHistoryHero__scroll" href="#women-history-content" aria-label="Aller au contenu"> <span
+                        class="womenHistoryHero__scrollIcon" aria-hidden="true">⌄</span> </a>
             </div>
         </section>
-
         <div class="womenHistoryPage__container" id="women-history-content">
-
             <section class="womenHistoryIntro" aria-label="Introduction">
-
-                <p class="womenHistoryIntro__text">
-                    Beaucoup de femmes ont subi l’« effet Matilda » : leurs découvertes ont été minimisées, attribuées à
-                    d’autres ou
-                    oubliées.
-                </p>
-
-                <p class="womenHistoryIntro__text">
-                    Voici sept parcours exemplaires, placés sur une frise chronologique, qui montrent comment la science
-                    a
-                    parfois
-                    effacé ses propres pionnières.
-                </p>
+                <p class="womenHistoryIntro__text"> Beaucoup de femmes ont subi l’« effet Matilda » : leurs découvertes
+                    ont été minimisées, attribuées à d’autres ou oubliées. </p>
+                <p class="womenHistoryIntro__text"> Voici sept parcours exemplaires, placés sur une frise chronologique,
+                    qui montrent comment la science a parfois effacé ses propres pionnières. </p>
             </section>
-
             <section class="womenTimeline" aria-label="Frise chronologique">
-
                 <div class="womenTimeline__list">
                     <div class="womenTimelineCard womenTimelineCard--light">
-                        <div class="womenTimelineCard__top">
-                            <span class="womenTimelineCard__year">C. 415</span>
-                            <span class="womenTimelineCard__name">Hypatia d’Alexandrie</span>
-                        </div>
-
-                        <p class="womenTimelineCard__text">
-                            Astronomie et mathématiques : enseignante et commentatrice d’ouvrages mathématiques.
-                            Effacement
-                            : sa mort
-                            violente et la postérité masculine ont largement éclipsé ses travaux et sa place dans
-                            l’histoire
-                            des sciences
-                            antiques.
-                        </p>
-
-                        <a class="womenTimelineCard__link" href="https://fr.wikipedia.org/wiki/Hypatie" target="_blank"
-                            rel="noopener noreferrer">
-                            En savoir plus <span aria-hidden="true">→</span>
-                        </a>
+                        <div class="womenTimelineCard__top"> <span class="womenTimelineCard__year">C. 415</span> <span
+                                class="womenTimelineCard__name">Hypatia d’Alexandrie</span> </div>
+                        <p class="womenTimelineCard__text"> Astronomie et mathématiques : enseignante et commentatrice
+                            d’ouvrages mathématiques. Effacement : sa mort violente et la postérité masculine ont
+                            largement éclipsé ses travaux et sa place dans l’histoire des sciences antiques. </p> <a
+                            class="womenTimelineCard__link" href="https://fr.wikipedia.org/wiki/Hypatie" target="_blank"
+                            rel="noopener noreferrer"> En savoir plus <span aria-hidden="true">→</span> </a>
                     </div>
-
                     <div class="womenTimelineCard womenTimelineCard--dark">
-                        <div class="womenTimelineCard__top">
-                            <span class="womenTimelineCard__name">Gabrielle-Émilie</span>
-                            <span class="womenTimelineCard__year">1740</span>
-                        </div>
-
-                        <p class="womenTimelineCard__text">
-                            Traduction et commentaire des <span class="womenTimelineCard__em">Principia</span> de
-                            Newton,
-                            diffusion des
-                            idées newtoniennes en France. Effacement : son rôle de traductrice-théoricienne a longtemps
-                            été
-                            réduit à une
-                            traductrice plutôt qu’à une savante à part entière.
-                        </p>
-
-                        <a class="womenTimelineCard__link"
+                        <div class="womenTimelineCard__top"> <span
+                                class="womenTimelineCard__name">Gabrielle-Émilie</span> <span
+                                class="womenTimelineCard__year">1740</span> </div>
+                        <p class="womenTimelineCard__text"> Traduction et commentaire des <span
+                                class="womenTimelineCard__em">Principia</span> de Newton, diffusion des idées
+                            newtoniennes en France. Effacement : son rôle de traductrice-théoricienne a longtemps été
+                            réduit à une traductrice plutôt qu’à une savante à part entière. </p> <a
+                            class="womenTimelineCard__link"
                             href="https://gallica.bnf.fr/accueil/fr/html/emilie-du-chatelet-et-les-sciences"
-                            target="_blank" rel="noopener noreferrer">
-                            En savoir plus <span aria-hidden="true">→</span>
+                            target="_blank" rel="noopener noreferrer"> En savoir plus <span aria-hidden="true">→</span>
                         </a>
                     </div>
-
                     <div class="womenTimelineCard womenTimelineCard--darkest">
-                        <div class="womenTimelineCard__top">
-                            <span class="womenTimelineCard__year">1811</span>
-                            <span class="womenTimelineCard__name">Mary Anning</span>
-                        </div>
-
-                        <p class="womenTimelineCard__text">
-                            Paléontologie : découvertes d’ichthyosaures et de plesiosaures sur les falaises de Lyme
-                            Regis.
-                            Effacement :
-                            ses trouvailles ont souvent été publiées ou créditées par des savants masculins qui
-                            s’appropriaient ses
-                            données.
-                        </p>
-
-                        <a class="womenTimelineCard__link"
+                        <div class="womenTimelineCard__top"> <span class="womenTimelineCard__year">1811</span> <span
+                                class="womenTimelineCard__name">Mary Anning</span> </div>
+                        <p class="womenTimelineCard__text"> Paléontologie : découvertes d’ichthyosaures et de
+                            plesiosaures sur les falaises de Lyme Regis. Effacement : ses trouvailles ont souvent été
+                            publiées ou créditées par des savants masculins qui s’appropriaient ses données. </p> <a
+                            class="womenTimelineCard__link"
                             href="https://www.mnhn.fr/fr/mary-anning-pionniere-en-paleontologie" target="_blank"
-                            rel="noopener noreferrer">
-                            En savoir plus <span aria-hidden="true">→</span>
-                        </a>
+                            rel="noopener noreferrer"> En savoir plus <span aria-hidden="true">→</span> </a>
                     </div>
-
                     <div class="womenTimelineCard womenTimelineCard--dark">
-                        <div class="womenTimelineCard__top">
-                            <span class="womenTimelineCard__name">Ada Lovelace</span>
+                        <div class="womenTimelineCard__top"> <span class="womenTimelineCard__name">Ada Lovelace</span>
                             <span class="womenTimelineCard__year">1843</span>
                         </div>
-
-                        <p class="womenTimelineCard__text">
-                            Informatique naissante : notes proposant un algorithme pour la machine analytique de Charles
-                            Babbage,
-                            considérée comme premier programme. Effacement : son rôle original a été sous-estimé pendant
-                            longtemps,
-                            souvent présenté comme simple assistante du projet.
-                        </p>
-
-                        <a class="womenTimelineCard__link"
+                        <p class="womenTimelineCard__text"> Informatique naissante : notes proposant un algorithme pour
+                            la machine analytique de Charles Babbage, considérée comme premier programme. Effacement :
+                            son rôle original a été sous-estimé pendant longtemps, souvent présenté comme simple
+                            assistante du projet. </p> <a class="womenTimelineCard__link"
                             href="https://www.bnf.fr/fr/ada-lovelace-1815-1852-premiere-programmeuse-et-pionniere-de-linformatique-bibliographie-selective"
-                            target="_blank" rel="noopener noreferrer">
-                            En savoir plus <span aria-hidden="true">→</span>
+                            target="_blank" rel="noopener noreferrer"> En savoir plus <span aria-hidden="true">→</span>
                         </a>
                     </div>
-
                     <div class="womenTimelineCard womenTimelineCard--light">
-                        <div class="womenTimelineCard__top">
-                            <span class="womenTimelineCard__year">1925</span>
-                            <span class="womenTimelineCard__name">Cecilia Payne-Gaposchkin</span>
-                        </div>
-
-                        <p class="womenTimelineCard__text">
-                            Astrophysique : thèse montrant que les étoiles sont majoritairement composées d’hydrogène.
-                            Effacement : ses
-                            conclusions furent d’abord remises en question et créditées partiellement à des collègues
-                            masculins avant
-                            d’être reconnues.
-                        </p>
-
-                        <a class="womenTimelineCard__link" href="https://fr.wikipedia.org/wiki/Cecilia_Payne-Gaposchkin"
-                            target="_blank" rel="noopener noreferrer">
-                            En savoir plus <span aria-hidden="true">→</span>
-                        </a>
+                        <div class="womenTimelineCard__top"> <span class="womenTimelineCard__year">1925</span> <span
+                                class="womenTimelineCard__name">Cecilia Payne-Gaposchkin</span> </div>
+                        <p class="womenTimelineCard__text"> Astrophysique : thèse montrant que les étoiles sont
+                            majoritairement composées d’hydrogène. Effacement : ses conclusions furent d’abord remises
+                            en question et créditées partiellement à des collègues masculins avant d’être reconnues.
+                        </p> <a class="womenTimelineCard__link"
+                            href="https://fr.wikipedia.org/wiki/Cecilia_Payne-Gaposchkin" target="_blank"
+                            rel="noopener noreferrer"> En savoir plus <span aria-hidden="true">→</span> </a>
                     </div>
-
                     <div class="womenTimelineCard womenTimelineCard--mid">
-                        <div class="womenTimelineCard__top">
-                            <span class="womenTimelineCard__name">Lise Meitner</span>
+                        <div class="womenTimelineCard__top"> <span class="womenTimelineCard__name">Lise Meitner</span>
                             <span class="womenTimelineCard__year">1938</span>
                         </div>
-
-                        <p class="womenTimelineCard__text">
-                            Physique nucléaire : explication théorique de la fission nucléaire avec Otto Frisch après
-                            expériences d’Otto
-                            Hahn. Effacement : la découverte de la fission sera honorée par le prix Nobel attribué à
-                            Hahn,
-                            sans
-                            reconnaissance pleine et immédiate du rôle de Meitner.
-                        </p>
-
-                        <a class="womenTimelineCard__link"
+                        <p class="womenTimelineCard__text"> Physique nucléaire : explication théorique de la fission
+                            nucléaire avec Otto Frisch après expériences d’Otto Hahn. Effacement : la découverte de la
+                            fission sera honorée par le prix Nobel attribué à Hahn, sans reconnaissance pleine et
+                            immédiate du rôle de Meitner. </p> <a class="womenTimelineCard__link"
                             href="https://theconversation.com/lise-meitner-une-marie-curie-autrichienne-sans-prix-nobel-243634"
-                            target="_blank" rel="noopener noreferrer">
-                            En savoir plus <span aria-hidden="true">→</span>
+                            target="_blank" rel="noopener noreferrer"> En savoir plus <span aria-hidden="true">→</span>
                         </a>
                     </div>
-
                     <div class="womenTimelineCard womenTimelineCard--dark">
-                        <div class="womenTimelineCard__top">
-                            <span class="womenTimelineCard__year">1952</span>
-                            <span class="womenTimelineCard__name">Rosalind Franklin</span>
-                        </div>
-
-                        <p class="womenTimelineCard__text">
-                            Biophysique : diffraction aux rayons X essentielle pour élucider la structure de l’ADN.
-                            Effacement : Watson
-                            et Crick utilisent son image et ses données sans crédit adéquat à l’époque ; la
-                            reconnaissance
-                            de Franklin
-                            est largement posthume.
-                        </p>
-
-                        <a class="womenTimelineCard__link"
+                        <div class="womenTimelineCard__top"> <span class="womenTimelineCard__year">1952</span> <span
+                                class="womenTimelineCard__name">Rosalind Franklin</span> </div>
+                        <p class="womenTimelineCard__text"> Biophysique : diffraction aux rayons X essentielle pour
+                            élucider la structure de l’ADN. Effacement : Watson et Crick utilisent son image et ses
+                            données sans crédit adéquat à l’époque ; la reconnaissance de Franklin est largement
+                            posthume. </p> <a class="womenTimelineCard__link"
                             href="https://theconversation.com/rosalind-franklin-la-scientifique-derriere-la-decouverte-de-la-structure-de-ladn-bien-trop-longtemps-invisibilisee-262141?gad_source=1&gad_campaignid=15167961260&gbraid=0AAAAABQKWzAEHVLAg6oIMJBnaVzy_4ts1&gclid=CjwKCAjwpOfHBhAxEiwAm1SwEpNRQwHZtFSkPnJ-3Jvvl7C_75r_xBCC2RI9P-i9F8-ZrC8ZKLObeRoCv8cQAvD_BwE"
-                            target="_blank" rel="noopener noreferrer">
-                            En savoir plus <span aria-hidden="true">→</span>
+                            target="_blank" rel="noopener noreferrer"> En savoir plus <span aria-hidden="true">→</span>
                         </a>
                     </div>
                 </div>
             </section>
-
             <section class="womenHistoryImage" aria-label="Illustration de la frise">
-
-                <div class="womenHistoryImage__media">
-                    <img class="womenHistoryImage__img" src="../assets/img/imgpage_Frise.avif"
-                        alt="Portraits de femmes scientifiques" loading="lazy" />
+                <div class="womenHistoryImage__media"> <img class="womenHistoryImage__img"
+                        src="../assets/img/imgpage_Frise.avif" alt="Portraits de femmes scientifiques" loading="lazy" />
                 </div>
             </section>
-
             <section class="womenHistoryOutro" aria-label="Conclusion">
-
-                <p class="womenHistoryOutro__text">
-                    On estime que des milliers de femmes scientifiques ont été victimes de l’effet Matilda à travers
-                    l’histoire. Ce
-                    terme désigne le fait que les découvertes réalisées par des femmes ont souvent été attribuées à
-                    leurs
-                    collègues
-                    masculins ou ignorées par la communauté scientifique.
-                </p>
-
-                <p class="womenHistoryOutro__text">
-                    Bien qu’il soit difficile d’en donner un chiffre exact, les historiens de la science s’accordent à
-                    dire
-                    que ce
-                    phénomène a touché une grande partie des chercheuses du XIXe et du XXe siècle, et qu’il persiste
-                    encore
-                    aujourd’hui sous des formes plus subtiles, dans la reconnaissance, les publications et les prix
-                    scientifiques.
-                </p>
+                <p class="womenHistoryOutro__text"> On estime que des milliers de femmes scientifiques ont été victimes
+                    de l’effet Matilda à travers l’histoire. Ce terme désigne le fait que les découvertes réalisées par
+                    des femmes ont souvent été attribuées à leurs collègues masculins ou ignorées par la communauté
+                    scientifique. </p>
+                <p class="womenHistoryOutro__text"> Bien qu’il soit difficile d’en donner un chiffre exact, les
+                    historiens de la science s’accordent à dire que ce phénomène a touché une grande partie des
+                    chercheuses du XIXe et du XXe siècle, et qu’il persiste encore aujourd’hui sous des formes plus
+                    subtiles, dans la reconnaissance, les publications et les prix scientifiques. </p>
             </section>
         </div>
     </main>
-
-
     <footer class="footer" aria-label="Pied de page">
-
         <div class="footer__content">
-
-            <div class="footer__logo">
-                <a href="../index.html" class="footer__logo-link">
-                    <img src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" class="footer__logo-img"
-                        loading="lazy">
-                </a>
-            </div>
-
+            <div class="footer__logo"> <a href="./index.html" class="footer__logo-link"> <img
+                        src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" class="footer__logo-img"
+                        loading="lazy"> </a> </div>
             <nav class="footer__menu" aria-label="Menu du footer">
                 <h3 class="footer__menu-title">MENU</h3>
                 <ul class="footer__menu-list">
                     <li class="footer__menu-item"><a href="Quisommenous.html" class="footer__menu-link">Qui somme nous
-                        </a>
-                        |</li>
+                        </a> |</li>
                     <li class="footer__menu-item"><a href="Ressource.html" class="footer__menu-link">Ressources </a> |
                     </li>
                     <li class="footer__menu-item"><a href="lexique.html" class="footer__menu-link">Lexique </a> |</li>
                     <li class="footer__menu-item"><a href="contact.html" class="footer__menu-link">Contact </a> |</li>
                 </ul>
             </nav>
-
-            <div class="footer__socials">
-                <span class="footer__separator"></span>
+            <div class="footer__socials"> <span class="footer__separator"></span>
                 <h3 class="footer__socials-title">SUIVEZ NOUS</h3>
                 <ul class="footer__socials-list">
                     <li><a href="../index.html" class="footer__social-link"><img src="../assets/icons/youtube-light.svg"
@@ -325,18 +200,13 @@
                                 src="../assets/icons/instagram-light.svg" alt="Instagram" loading="lazy"></a></li>
                 </ul>
             </div>
-
-            <div class="footer__bottom-text">
-                <span class="footer__separator"></span>
+            <div class="footer__bottom-text"> <span class="footer__separator"></span>
                 <p class="footer__festival">projet réalisé en 2025 dans le cadre d’un exercice pédagogique au
-                    département
-                    <a href="https://www.iut-nfc.univ-fcomte.fr/" target="_blank" rel="noopener noreferrer">MMi de
-                        Montbéliard</a>
-                </p>
+                    département <a href="https://www.iut-nfc.univ-fcomte.fr/" target="_blank"
+                        rel="noopener noreferrer">MMi de Montbéliard</a> </p>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

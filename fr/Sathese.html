@@ -7,45 +7,39 @@
     <meta name="description"
         content="Découvrez les écrits de Marietta Blau, pionnière de la physique nucléaire. Sa thèse, ses méthodes photographiques et l’impact durable de ses recherches sur la science moderne." />
     <title>Ses Écrit - AQITA</title>
-
     <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="../assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
     <link rel="manifest" href="../assets/favicons/site.webmanifest" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
-
     <link rel="stylesheet" href="../src/css/style.css" />
     <script type="module" src="../src/js/script.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a class="header__link" href="../index.html">
-            <img src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" />
-        </a>
-        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-        </button>
-
-        <nav class="menu" id="mainNav" aria-hidden="true">
-            <button class="menu__close" aria-label="Fermer le menu">✕</button>
+    <header class="header"> <a class="header__link" href="./index.html"> <img src="../assets/icons/Logo_AQITA_Light.svg"
+                alt="Logo du site AQITA" /> </a>
+        <div class="lang-switcher"> <button class="lang-switcher__btn" aria-label="Changer de langue"
+                aria-expanded="false"> <span class="lang-switcher__current">FR</span> <span class="lang-switcher__arrow"
+                    aria-hidden="true">▼</span> </button>
+            <ul class="lang-switcher__menu" hidden>
+                <li><a href="../en/herwritings.html" class="lang-switcher__link">EN</a></li>
+            </ul>
+        </div> <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"> <span
+                aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span> <span aria-hidden="true"
+                class="menu-btn__bar menu-btn__bar--light"></span> <span aria-hidden="true"
+                class="menu-btn__bar menu-btn__bar--light"></span> </button>
+        <nav class="menu" id="mainNav" aria-hidden="true"> <button class="menu__close"
+                aria-label="Fermer le menu">✕</button>
             <ul class="menu__list">
-                <li class="menu__item menu__item--logo">
-                    <a href="../index.html" class="header__logo">
-                        <img src="../assets/icons/Logo_AQITA_Light.svg" alt="" class="header__logo-image"
-                            aria-hidden="true">
-                        <span>AQITA</span>
-                    </a>
-                </li>
+                <li class="menu__item menu__item--logo"> <a href="./index.html" class="header__logo"> <img
+                            src="../assets/icons/Logo_AQITA_Light.svg" alt="" class="header__logo-image"
+                            aria-hidden="true"> <span>AQITA</span> </a> </li>
                 <li class="menu__item"><a class="menu__link" href="chercheuse.html">SON HISTOIRE</a></li>
                 <li class="menu__item"><a class="menu__link" href="Sathese.html">SES ÉCRIT</a></li>
                 <li class="menu__item"><a class="menu__link" href="Lesgrandesoubliée.html">LES GRANDES OUBLIÉES</a>
@@ -59,125 +53,69 @@
             </ul>
         </nav>
     </header>
-
     <main class="writingsPage" id="main-content">
-
         <h1 class="writingsHero__title" id="writings-hero-title">Ses écrit</h1>
-
-
-
         <div class="writingsPage__container" id="writings-content">
-
             <section class="writingsIntro" aria-label="Introduction">
-
                 <div class="writingsIntro__content">
-                    <p class="writingsIntro__text">
-                        Marietta Blau, physicienne autrichienne, a révolutionné l’étude des particules atomiques et des
-                        rayons
-                        cosmiques. Sa thèse sur l’absorption des rayons gamma et ses méthodes photographiques ont ouvert
-                        de
-                        nouvelles
-                        perspectives en physique nucléaire.
-                        Découvrez sa démarche scientifique, ses découvertes majeures, et l’impact durable de ses travaux
-                        sur
-                        la
-                        science moderne.
-                    </p>
+                    <p class="writingsIntro__text"> Marietta Blau, physicienne autrichienne, a révolutionné l’étude des
+                        particules atomiques et des rayons cosmiques. Sa thèse sur l’absorption des rayons gamma et ses
+                        méthodes photographiques ont ouvert de nouvelles perspectives en physique nucléaire. Découvrez
+                        sa démarche scientifique, ses découvertes majeures, et l’impact durable de ses travaux sur la
+                        science moderne. </p>
                 </div>
             </section>
-
             <section class="writingsThesis" aria-labelledby="writings-thesis-title">
-                <h2 class="writingsThesis__title writingsThesis__title--link" id="writings-thesis-title">
-                    Une thèse visionnaire
-                </h2>
-
+                <h2 class="writingsThesis__title writingsThesis__title--link" id="writings-thesis-title"> Une thèse
+                    visionnaire </h2>
                 <div class="writingsThesis__content">
-                    <p class="writingsThesis__text">
-                        En 1919, Marietta Blau soutient sa thèse à l’Université de Vienne sous la direction du physicien
-                        Stefan Meyer.
-                    </p>
-
-                    <p class="writingsThesis__text">
-                        Son sujet : l’absorption des rayons gamma, un domaine encore peu exploré à l’époque. Sa thèse
-                        marque
-                        les débuts
-                        d’une carrière scientifique exceptionnelle.
-                    </p>
-
-                    <p class="writingsThesis__text">
-                        Blau y démontre une rigueur expérimentale hors norme et introduit des méthodes qui seront à la
-                        base
-                        de ses
-                        recherches futures.
-                    </p>
+                    <p class="writingsThesis__text"> En 1919, Marietta Blau soutient sa thèse à l’Université de Vienne
+                        sous la direction du physicien Stefan Meyer. </p>
+                    <p class="writingsThesis__text"> Son sujet : l’absorption des rayons gamma, un domaine encore peu
+                        exploré à l’époque. Sa thèse marque les débuts d’une carrière scientifique exceptionnelle. </p>
+                    <p class="writingsThesis__text"> Blau y démontre une rigueur expérimentale hors norme et introduit
+                        des méthodes qui seront à la base de ses recherches futures. </p>
                 </div>
             </section>
-
             <section class="writingsBlue" aria-labelledby="writings-blue-title">
-                <div class="writingsBlue__media">
-                    <img class="writingsBlue__img" src="../assets/img/imgpage_Sesécrit.avif"
-                        alt="Illustration d’un laboratoire" loading="lazy" />
+                <div class="writingsBlue__media"> <img class="writingsBlue__img"
+                        src="../assets/img/imgpage_Sesécrit.avif" alt="Illustration d’un laboratoire" loading="lazy" />
                 </div>
-
                 <div class="writingsBlue__panel">
                     <h2 class="writingsBlue__title" id="writings-blue-title">Réinventer la physique par l’image</h2>
-
                     <div class="writingsBlue__content">
-                        <p class="writingsBlue__text">
-                            Marietta Blau développe une méthode photographique révolutionnaire pour détecter les
-                            particules
-                            à haute
-                            énergie. Ses émulsions photographiques capturent les traces invisibles des particules
-                            subatomiques,
-                            révélant leur trajectoire et leur comportement.
-                        </p>
-
-                        <p class="writingsBlue__text">
-                            Cette technique permet la première observation des étoiles de désintégration, qui deviennent
-                            une
-                            preuve
-                            directe de l’existence de particules cosmiques à très haute énergie.
-                        </p>
-
-                        <p class="writingsBlue__text">
-                            Grâce à cette innovation, Blau a ouvert une nouvelle ère en physique expérimentale et
-                            influencé
-                            des
-                            générations de chercheurs, dont Cecil Powell, futur lauréat du Prix Nobel.
-                        </p>
+                        <p class="writingsBlue__text"> Marietta Blau développe une méthode photographique
+                            révolutionnaire pour détecter les particules à haute énergie. Ses émulsions photographiques
+                            capturent les traces invisibles des particules subatomiques, révélant leur trajectoire et
+                            leur comportement. </p>
+                        <p class="writingsBlue__text"> Cette technique permet la première observation des étoiles de
+                            désintégration, qui deviennent une preuve directe de l’existence de particules cosmiques à
+                            très haute énergie. </p>
+                        <p class="writingsBlue__text"> Grâce à cette innovation, Blau a ouvert une nouvelle ère en
+                            physique expérimentale et influencé des générations de chercheurs, dont Cecil Powell, futur
+                            lauréat du Prix Nobel. </p>
                     </div>
                 </div>
             </section>
         </div>
     </main>
-
-
     <footer class="footer" aria-label="Pied de page">
-
         <div class="footer__content">
-
-            <div class="footer__logo">
-                <a href="../index.html" class="footer__logo-link">
-                    <img src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" class="footer__logo-img"
-                        loading="lazy">
-                </a>
-            </div>
-
+            <div class="footer__logo"> <a href="./index.html" class="footer__logo-link"> <img
+                        src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" class="footer__logo-img"
+                        loading="lazy"> </a> </div>
             <nav class="footer__menu" aria-label="Menu du footer">
                 <h3 class="footer__menu-title">MENU</h3>
                 <ul class="footer__menu-list">
                     <li class="footer__menu-item"><a href="Quisommenous.html" class="footer__menu-link">Qui somme nous
-                        </a>
-                        |</li>
+                        </a> |</li>
                     <li class="footer__menu-item"><a href="Ressource.html" class="footer__menu-link">Ressources </a> |
                     </li>
                     <li class="footer__menu-item"><a href="lexique.html" class="footer__menu-link">Lexique </a> |</li>
                     <li class="footer__menu-item"><a href="contact.html" class="footer__menu-link">Contact </a> |</li>
                 </ul>
             </nav>
-
-            <div class="footer__socials">
-                <span class="footer__separator"></span>
+            <div class="footer__socials"> <span class="footer__separator"></span>
                 <h3 class="footer__socials-title">SUIVEZ NOUS</h3>
                 <ul class="footer__socials-list">
                     <li><a href="../index.html" class="footer__social-link"><img src="../assets/icons/youtube-light.svg"
@@ -192,14 +130,10 @@
                                 src="../assets/icons/instagram-light.svg" alt="Instagram" loading="lazy"></a></li>
                 </ul>
             </div>
-
-            <div class="footer__bottom-text">
-                <span class="footer__separator"></span>
+            <div class="footer__bottom-text"> <span class="footer__separator"></span>
                 <p class="footer__festival">projet réalisé en 2025 dans le cadre d’un exercice pédagogique au
-                    département
-                    <a href="https://www.iut-nfc.univ-fcomte.fr/" target="_blank" rel="noopener noreferrer">MMi de
-                        Montbéliard</a>
-                </p>
+                    département <a href="https://www.iut-nfc.univ-fcomte.fr/" target="_blank"
+                        rel="noopener noreferrer">MMi de Montbéliard</a> </p>
             </div>
         </div>
     </footer>

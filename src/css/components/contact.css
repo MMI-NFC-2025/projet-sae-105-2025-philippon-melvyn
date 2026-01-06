@@ -1,0 +1,116 @@
+.contactIntro {
+    padding: 2.5rem 1.5rem 2rem;
+}
+
+.contactForm {
+    padding: 0 1.5rem 3rem;
+}
+
+.contactForm__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contactForm__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.contactForm__label {
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-semibold);
+}
+
+.contactForm__input {
+    font-family: var(--font-family-work-sans);
+    font-size: var(--font-size-15);
+    padding: 0.75rem 0.9rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(33, 33, 33, 0.25);
+    background-color: var(--light-100);
+}
+
+.contactForm__textarea {
+    font-family: var(--font-family-work-sans);
+    font-size: var(--font-size-15);
+    padding: 0.75rem 0.9rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(33, 33, 33, 0.25);
+    background-color: var(--light-100);
+}
+
+.contactForm__button {
+    margin-top: 1rem;
+    align-self: flex-start;
+    padding: 0.75rem 1.75rem;
+    border-radius: 2rem;
+    border: none;
+
+    background-color: var(--primary-400);
+    color: var(--light);
+    height: 100%;
+
+    cursor: pointer;
+}
+
+.contactAlt {
+    padding: 0 1.5rem;
+}
+
+.contactAlt__title {
+    font-family: var(--font-family-urbanist);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-extrabold);
+    margin-bottom: 1.5rem;
+}
+
+.contactAlt__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contactAlt__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contactAlt__number {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--font-family-urbanist);
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-bold);
+
+    background-color: var(--primary-300);
+    color: var(--light);
+}
+
+.contactAlt__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactAlt__label {
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-semibold);
+}
+
+.contactAlt__value {
+    font-size: var(--font-size-15);
+    color: var(--accent-100);
+    text-decoration: none;
+}

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -7,45 +7,39 @@
     <meta name="description"
         content="Découvrez le parcours d’une chercheuse, ses découvertes scientifiques, son héritage et les obstacles rencontrés dans un monde longtemps dominé par les hommes." />
     <title>Son Histoire - AQITA</title>
-
     <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="../assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
     <link rel="manifest" href="../assets/favicons/site.webmanifest" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
-
     <link rel="stylesheet" href="../src/css/style.css" />
     <script type="module" src="../src/js/script.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a class="header__link" href="../index.html">
-            <img src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" />
-        </a>
-        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-        </button>
-
-        <nav class="menu" id="mainNav" aria-hidden="true">
-            <button class="menu__close" aria-label="Fermer le menu">✕</button>
+    <header class="header"> <a class="header__link" href="./index.html"> <img src="../assets/icons/Logo_AQITA_Light.svg"
+                alt="Logo du site AQITA" /> </a>
+        <div class="lang-switcher"> <button class="lang-switcher__btn" aria-label="Changer de langue"
+                aria-expanded="false"> <span class="lang-switcher__current">FR</span> <span class="lang-switcher__arrow"
+                    aria-hidden="true">▼</span> </button>
+            <ul class="lang-switcher__menu" hidden>
+                <li><a href="../en/pictureascientist.html" class="lang-switcher__link">EN</a></li>
+            </ul>
+        </div> <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"> <span
+                aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span> <span aria-hidden="true"
+                class="menu-btn__bar menu-btn__bar--light"></span> <span aria-hidden="true"
+                class="menu-btn__bar menu-btn__bar--light"></span> </button>
+        <nav class="menu" id="mainNav" aria-hidden="true"> <button class="menu__close"
+                aria-label="Fermer le menu">✕</button>
             <ul class="menu__list">
-                <li class="menu__item menu__item--logo">
-                    <a href="../index.html" class="header__logo">
-                        <img src="../assets/icons/Logo_AQITA_Light.svg" alt="" class="header__logo-image"
-                            aria-hidden="true">
-                        <span>AQITA</span>
-                    </a>
-                </li>
+                <li class="menu__item menu__item--logo"> <a href="./index.html" class="header__logo"> <img
+                            src="../assets/icons/Logo_AQITA_Light.svg" alt="" class="header__logo-image"
+                            aria-hidden="true"> <span>AQITA</span> </a> </li>
                 <li class="menu__item"><a class="menu__link" href="chercheuse.html">SON HISTOIRE</a></li>
                 <li class="menu__item"><a class="menu__link" href="Sathese.html">SES ÉCRIT</a></li>
                 <li class="menu__item"><a class="menu__link" href="Lesgrandesoubliée.html">LES GRANDES OUBLIÉES</a>
@@ -59,208 +53,113 @@
             </ul>
         </nav>
     </header>
-
     <main class="storyPage" id="main-content">
-
         <section class="storyHero" aria-labelledby="story-hero-title">
-            <div class="storyHero__media">
-                <img class="storyHero__img" src="../assets/img/imgHeader_chercheuse.avif"
+            <div class="storyHero__media"> <img class="storyHero__img" src="../assets/img/imgHeader_chercheuse.avif"
                     alt="Portrait de Marietta Blau" fetchpriority="high" />
                 <h1 class="storyHero__title" id="story-hero-title">Son histoire</h1>
-            </div>
-
-            <a class="storyHero__scroll" href="#story-content" aria-label="Aller au contenu">
-                <span class="storyHero__scrollIcon" aria-hidden="true">⌄</span>
-            </a>
+            </div> <a class="storyHero__scroll" href="#story-content" aria-label="Aller au contenu"> <span
+                    class="storyHero__scrollIcon" aria-hidden="true">⌄</span> </a>
         </section>
-
         <div class="storyPage__container" id="story-content">
             <section class="storySection" aria-labelledby="story-section-1">
                 <h2 class="storySection__title" id="story-section-1">Une pionnière méconnue</h2>
-
                 <div class="storySection__content">
-                    <p class="storySection__text">
-                        Marietta Blau fut l’une des rares femmes scientifiques de son époque à apporter des
-                        contributions
-                        majeures à la
-                        physique nucléaire. Née à Vienne en 1894, elle a consacré sa vie à l’étude des particules
-                        atomiques
-                        et des
-                        rayons cosmiques, développant des méthodes révolutionnaires qui ont ouvert la voie à de
-                        nombreuses
-                        découvertes.
-                    </p>
-
-                    <p class="storySection__text">
-                        Malgré les obstacles liés à son genre et à son origine juive, elle a persévéré dans ses
-                        recherches
-                        et a obtenu
-                        une reconnaissance internationale pour ses travaux innovants sur la photographie nucléaire.
-                    </p>
-
+                    <p class="storySection__text"> Marietta Blau fut l’une des rares femmes scientifiques de son époque
+                        à apporter des contributions majeures à la physique nucléaire. Née à Vienne en 1894, elle a
+                        consacré sa vie à l’étude des particules atomiques et des rayons cosmiques, développant des
+                        méthodes révolutionnaires qui ont ouvert la voie à de nombreuses découvertes. </p>
+                    <p class="storySection__text"> Malgré les obstacles liés à son genre et à son origine juive, elle a
+                        persévéré dans ses recherches et a obtenu une reconnaissance internationale pour ses travaux
+                        innovants sur la photographie nucléaire. </p>
                 </div>
             </section>
-
-            <div class="storyMedia">
-                <img class="storyMedia__img" src="../assets/img/imgpage_Chercheuseville.avif" alt="Vue de Vienne"
-                    loading="lazy" />
+            <div class="storyMedia"> <img class="storyMedia__img" src="../assets/img/imgpage_Chercheuseville.avif"
+                    alt="Vue de Vienne" loading="lazy" />
                 <p class="storyMedia__caption">Vienne</p>
             </div>
-
             <section class="storySection" aria-labelledby="story-section-2">
                 <h2 class="storySection__title" id="story-section-2">Jeunesse et formation</h2>
-
                 <div class="storySection__content">
-                    <p class="storySection__text">
-                        <span class="storySection__date">1894 - Naissance :</span>
-                        Marietta Blau naît le 29 avril dans une famille juive aisée de Vienne. Dès son plus jeune âge,
-                        elle
-                        manifeste
-                        une curiosité insatiable pour les sciences naturelles et les mathématiques.
-                    </p>
-
-                    <p class="storySection__text">
-                        <span class="storySection__date">1914 - Études universitaires :</span>
-                        À une époque où les femmes étaient rarement admises dans les universités, Marietta entre à
-                        l’Université de
-                        Vienne. Elle étudie la physique et les mathématiques, bravant les préjugés de son temps.
-                    </p>
-
-
-                    <p class="storySection__text">
-                        <span class="storySection__date">1919 - Doctorat :</span>
-                        Elle obtient son doctorat en physique avec une thèse sur l’absorption des rayons gamma. Son
-                        directeur de thèse,
-                        Stefan Meyer, reconnaît immédiatement son talent exceptionnel.
-                    </p>
+                    <p class="storySection__text"> <span class="storySection__date">1894 - Naissance :</span> Marietta
+                        Blau naît le 29 avril dans une famille juive aisée de Vienne. Dès son plus jeune âge, elle
+                        manifeste une curiosité insatiable pour les sciences naturelles et les mathématiques. </p>
+                    <p class="storySection__text"> <span class="storySection__date">1914 - Études universitaires
+                            :</span> À une époque où les femmes étaient rarement admises dans les universités, Marietta
+                        entre à l’Université de Vienne. Elle étudie la physique et les mathématiques, bravant les
+                        préjugés de son temps. </p>
+                    <p class="storySection__text"> <span class="storySection__date">1919 - Doctorat :</span> Elle
+                        obtient son doctorat en physique avec une thèse sur l’absorption des rayons gamma. Son directeur
+                        de thèse, Stefan Meyer, reconnaît immédiatement son talent exceptionnel. </p>
                 </div>
             </section>
-
-            <div class="storyMedia">
-                <img class="storyMedia__img" src="../assets/img/imgpage_Chercheuseparcours.avif"
-                    alt="Illustration représentant des études universitaires" loading="lazy" />
-            </div>
-
+            <div class="storyMedia"> <img class="storyMedia__img" src="../assets/img/imgpage_Chercheuseparcours.avif"
+                    alt="Illustration représentant des études universitaires" loading="lazy" /> </div>
             <section class="storySection" aria-labelledby="story-section-3">
                 <h2 class="storySection__title" id="story-section-3">L’exil et la persévérance</h2>
-
                 <div class="storySection__content">
-                    <p class="storySection__text">
-                        <span class="storySection__date">1938 - Anschluss :</span>
-                        L’annexion de l’Autriche par l’Allemagne nazie force Marietta à fuir. En tant que scientifique
-                        juive, elle doit
-                        abandonner son laboratoire, ses recherches en cours et sa position académique. Elle trouve
-                        refuge en
-                        Norvège,
-                        puis au Mexique, et finalement aux États-Unis.
-                    </p>
-
-                    <p class="storySection__text">
-                        L’exil marque une rupture tragique dans sa carrière. Loin de son laboratoire viennois et sans
-                        accès
-                        aux mêmes
-                        ressources, elle doit reconstruire sa vie professionnelle dans des conditions difficiles. Malgré
-                        ces
-                        obstacles,
-                        elle continue à publier et à contribuer à la recherche scientifique.
-                    </p>
-
-                    <p class="storySection__text">
-                        <span class="storySection__date">1960 - Retour à Vienne :</span>
+                    <p class="storySection__text"> <span class="storySection__date">1938 - Anschluss :</span> L’annexion
+                        de l’Autriche par l’Allemagne nazie force Marietta à fuir. En tant que scientifique juive, elle
+                        doit abandonner son laboratoire, ses recherches en cours et sa position académique. Elle trouve
+                        refuge en Norvège, puis au Mexique, et finalement aux États-Unis. </p>
+                    <p class="storySection__text"> L’exil marque une rupture tragique dans sa carrière. Loin de son
+                        laboratoire viennois et sans accès aux mêmes ressources, elle doit reconstruire sa vie
+                        professionnelle dans des conditions difficiles. Malgré ces obstacles, elle continue à publier et
+                        à contribuer à la recherche scientifique. </p>
+                    <p class="storySection__text"> <span class="storySection__date">1960 - Retour à Vienne :</span>
                         Après plus de vingt ans d’exil, Marietta retourne en Autriche. Elle travaille à l’Institut du
-                        Radium
-                        jusqu’à sa
-                        retraite, où elle est enfin reconnue pour ses contributions pionnières. L’Autriche lui décerne
-                        le
-                        Prix Erwin
-                        Schrödinger en 1962.
-                    </p>
+                        Radium jusqu’à sa retraite, où elle est enfin reconnue pour ses contributions pionnières.
+                        L’Autriche lui décerne le Prix Erwin Schrödinger en 1962. </p>
                 </div>
             </section>
-
             <section class="storyHighlight" aria-labelledby="story-highlight-title">
                 <h2 class="storyHighlight__title" id="story-highlight-title">Héritage et reconnaissance posthume</h2>
-
                 <div class="storyHighlight__content">
-                    <p class="storyHighlight__text">
-                        Marietta Blau s’éteint le 27 janvier 1970 à Vienne. Bien que largement méconnue de son vivant en
-                        raison de son
-                        exil et de sa condition de femme dans un milieu dominé par les hommes, son travail a eu un
-                        impact
-                        profond et
-                        durable sur la physique moderne.
-                    </p>
-
-                    <p class="storyHighlight__text">
-                        Cecil Powell, qui reçut le Prix Nobel de Physique en 1950 pour ses travaux utilisant la méthode
-                        développée par
-                        Blau, reconnut publiquement sa dette envers elle. Aujourd’hui, elle est considérée comme une
-                        pionnière
-                        injustement oubliée de la physique nucléaire.
-                    </p>
+                    <p class="storyHighlight__text"> Marietta Blau s’éteint le 27 janvier 1970 à Vienne. Bien que
+                        largement méconnue de son vivant en raison de son exil et de sa condition de femme dans un
+                        milieu dominé par les hommes, son travail a eu un impact profond et durable sur la physique
+                        moderne. </p>
+                    <p class="storyHighlight__text"> Cecil Powell, qui reçut le Prix Nobel de Physique en 1950 pour ses
+                        travaux utilisant la méthode développée par Blau, reconnut publiquement sa dette envers elle.
+                        Aujourd’hui, elle est considérée comme une pionnière injustement oubliée de la physique
+                        nucléaire. </p>
                 </div>
             </section>
-
             <section class="lifeTimeline" aria-labelledby="life-timeline-title">
                 <h2 class="lifeTimeline__title" id="life-timeline-title">Chronologie de vie</h2>
-
                 <ul class="lifeTimeline__list">
-                    <li class="lifeTimeline__item">
-                        <span class="lifeTimeline__range">1894-1914</span>
-                        <span class="lifeTimeline__label">Jeunesse à Vienne</span>
-                    </li>
-
-                    <li class="lifeTimeline__item lifeTimeline__item--active">
-                        <span class="lifeTimeline__range">1914-1919</span>
-                        <span class="lifeTimeline__label">Études universitaires</span>
-                    </li>
-
-                    <li class="lifeTimeline__item">
-                        <span class="lifeTimeline__range">1919-1938</span>
-                        <span class="lifeTimeline__label">Carrière à l’Institut du Radium</span>
-                    </li>
-
-                    <li class="lifeTimeline__item">
-                        <span class="lifeTimeline__range">1938-1960</span>
-                        <span class="lifeTimeline__label">Exil (Norvège, Mexique, USA)</span>
-                    </li>
-
-                    <li class="lifeTimeline__item">
-                        <span class="lifeTimeline__range">1960-1970</span>
-                        <span class="lifeTimeline__label">Retour à Vienne</span>
-                    </li>
+                    <li class="lifeTimeline__item"> <span class="lifeTimeline__range">1894-1914</span> <span
+                            class="lifeTimeline__label">Jeunesse à Vienne</span> </li>
+                    <li class="lifeTimeline__item lifeTimeline__item--active"> <span
+                            class="lifeTimeline__range">1914-1919</span> <span class="lifeTimeline__label">Études
+                            universitaires</span> </li>
+                    <li class="lifeTimeline__item"> <span class="lifeTimeline__range">1919-1938</span> <span
+                            class="lifeTimeline__label">Carrière à l’Institut du Radium</span> </li>
+                    <li class="lifeTimeline__item"> <span class="lifeTimeline__range">1938-1960</span> <span
+                            class="lifeTimeline__label">Exil (Norvège, Mexique, USA)</span> </li>
+                    <li class="lifeTimeline__item"> <span class="lifeTimeline__range">1960-1970</span> <span
+                            class="lifeTimeline__label">Retour à Vienne</span> </li>
                 </ul>
             </section>
         </div>
     </main>
-
-
     <footer class="footer" aria-label="Pied de page">
-
         <div class="footer__content">
-
-            <div class="footer__logo">
-                <a href="../index.html" class="footer__logo-link">
-                    <img src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" class="footer__logo-img"
-                        loading="lazy">
-                </a>
-            </div>
-
+            <div class="footer__logo"> <a href="./index.html" class="footer__logo-link"> <img
+                        src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" class="footer__logo-img"
+                        loading="lazy"> </a> </div>
             <nav class="footer__menu" aria-label="Menu du footer">
                 <h3 class="footer__menu-title">MENU</h3>
                 <ul class="footer__menu-list">
                     <li class="footer__menu-item"><a href="Quisommenous.html" class="footer__menu-link">Qui somme nous
-                        </a>
-                        |</li>
+                        </a> |</li>
                     <li class="footer__menu-item"><a href="Ressource.html" class="footer__menu-link">Ressources </a> |
                     </li>
                     <li class="footer__menu-item"><a href="lexique.html" class="footer__menu-link">Lexique </a> |</li>
                     <li class="footer__menu-item"><a href="contact.html" class="footer__menu-link">Contact </a> |</li>
                 </ul>
             </nav>
-
-            <div class="footer__socials">
-                <span class="footer__separator"></span>
+            <div class="footer__socials"> <span class="footer__separator"></span>
                 <h3 class="footer__socials-title">SUIVEZ NOUS</h3>
                 <ul class="footer__socials-list">
                     <li><a href="../index.html" class="footer__social-link"><img src="../assets/icons/youtube-light.svg"
@@ -275,14 +174,10 @@
                                 src="../assets/icons/instagram-light.svg" alt="Instagram" loading="lazy"></a></li>
                 </ul>
             </div>
-
-            <div class="footer__bottom-text">
-                <span class="footer__separator"></span>
+            <div class="footer__bottom-text"> <span class="footer__separator"></span>
                 <p class="footer__festival">projet réalisé en 2025 dans le cadre d’un exercice pédagogique au
-                    département
-                    <a href="https://www.iut-nfc.univ-fcomte.fr/" target="_blank" rel="noopener noreferrer">MMi de
-                        Montbéliard</a>
-                </p>
+                    département <a href="https://www.iut-nfc.univ-fcomte.fr/" target="_blank"
+                        rel="noopener noreferrer">MMi de Montbéliard</a> </p>
             </div>
         </div>
     </footer>

@@ -7,45 +7,39 @@
     <meta name="description"
         content="Consultez le lexique AQITA pour comprendre les termes clés liés aux femmes scientifiques, à l’effet Matilda et à l’histoire des sciences." />
     <title>Lexique - AQITA</title>
-
     <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="../assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
     <link rel="manifest" href="../assets/favicons/site.webmanifest" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
-
     <link rel="stylesheet" href="../src/css/style.css" />
     <script type="module" src="../src/js/script.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a class="header__link" href="../index.html">
-            <img src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" />
-        </a>
-        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-            <span aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span>
-        </button>
-
-        <nav class="menu" id="mainNav" aria-hidden="true">
-            <button class="menu__close" aria-label="Fermer le menu">✕</button>
+    <header class="header"> <a class="header__link" href="./index.html"> <img src="../assets/icons/Logo_AQITA_Light.svg"
+                alt="Logo du site AQITA" /> </a>
+        <div class="lang-switcher"> <button class="lang-switcher__btn" aria-label="Changer de langue"
+                aria-expanded="false"> <span class="lang-switcher__current">FR</span> <span class="lang-switcher__arrow"
+                    aria-hidden="true">▼</span> </button>
+            <ul class="lang-switcher__menu" hidden>
+                <li><a href="../en/glossary.html" class="lang-switcher__link">EN</a></li>
+            </ul>
+        </div> <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"> <span
+                aria-hidden="true" class="menu-btn__bar menu-btn__bar--light"></span> <span aria-hidden="true"
+                class="menu-btn__bar menu-btn__bar--light"></span> <span aria-hidden="true"
+                class="menu-btn__bar menu-btn__bar--light"></span> </button>
+        <nav class="menu" id="mainNav" aria-hidden="true"> <button class="menu__close"
+                aria-label="Fermer le menu">✕</button>
             <ul class="menu__list">
-                <li class="menu__item menu__item--logo">
-                    <a href="../index.html" class="header__logo">
-                        <img src="../assets/icons/Logo_AQITA_Light.svg" alt="" class="header__logo-image"
-                            aria-hidden="true">
-                        <span>AQITA</span>
-                    </a>
-                </li>
+                <li class="menu__item menu__item--logo"> <a href="./index.html" class="header__logo"> <img
+                            src="../assets/icons/Logo_AQITA_Light.svg" alt="" class="header__logo-image"
+                            aria-hidden="true"> <span>AQITA</span> </a> </li>
                 <li class="menu__item"><a class="menu__link" href="chercheuse.html">SON HISTOIRE</a></li>
                 <li class="menu__item"><a class="menu__link" href="Sathese.html">SES ÉCRIT</a></li>
                 <li class="menu__item"><a class="menu__link" href="Lesgrandesoubliée.html">LES GRANDES OUBLIÉES</a>
@@ -59,265 +53,151 @@
             </ul>
         </nav>
     </header>
-
     <main class="lexiconPage" id="main-content">
         <section class="lexiconIntro" aria-labelledby="lexicon-title">
             <h1 class="lexiconIntro__title" id="lexicon-title">Tout comprendre</h1>
-
-            <p class="lexiconIntro__text">
-                Découvrez ici les définitions simples des termes scientifiques et historiques utilisés sur le site.
-                De la physique nucléaire à l’effet Matilda, ce glossaire aide à mieux saisir le vocabulaire et les
-                enjeux
-                des femmes qui ont fait la science.
-            </p>
+            <p class="lexiconIntro__text"> Découvrez ici les définitions simples des termes scientifiques et historiques
+                utilisés sur le site. De la physique nucléaire à l’effet Matilda, ce glossaire aide à mieux saisir le
+                vocabulaire et les enjeux des femmes qui ont fait la science. </p>
         </section>
-
         <section class="lexiconList" aria-label="Liste des termes">
-
             <div class="lexiconList__groups">
                 <div class="lexiconGroup">
-                    <div class="lexiconGroup__badge">
-                        <span class="lexiconGroup__letter" aria-hidden="true">A</span>
+                    <div class="lexiconGroup__badge"> <span class="lexiconGroup__letter" aria-hidden="true">A</span>
                     </div>
-
                     <div class="lexiconGroup__card">
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Absorption des rayons gamma :</span>
-                            <span class="lexiconGroup__def">
-                                Processus par lequel certaines matières captent l’énergie des rayons gamma, utilisé par
-                                Marietta Blau dans sa thèse.
-                            </span>
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Absorption des rayons gamma
+                                :</span> <span class="lexiconGroup__def"> Processus par lequel certaines matières
+                                captent l’énergie des rayons gamma, utilisé par Marietta Blau dans sa thèse. </span>
                         </p>
-
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Anthropocentrisme :</span>
-                            <span class="lexiconGroup__def">
-                                Vision qui place l’humain au centre de tout (utile pour comprendre les biais historiques
-                                dans la science).
-                            </span>
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Anthropocentrisme :</span> <span
+                                class="lexiconGroup__def"> Vision qui place l’humain au centre de tout (utile pour
+                                comprendre les biais historiques dans la science). </span> </p>
+                    </div>
+                </div>
+                <div class="lexiconGroup">
+                    <div class="lexiconGroup__badge"> <span class="lexiconGroup__letter" aria-hidden="true">B</span>
+                    </div>
+                    <div class="lexiconGroup__card">
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Biographie scientifique :</span>
+                            <span class="lexiconGroup__def"> Récit de la vie d’un ou d’une scientifique, mettant en
+                                avant ses découvertes et sa carrière. </span>
+                        </p>
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Bias / Micro-biais :</span>
+                            <span class="lexiconGroup__def"> Préjugés subtils et inconscients qui influencent les
+                                décisions et comportements, comme ceux décrits dans Picture a Scientist. </span>
                         </p>
                     </div>
                 </div>
-
                 <div class="lexiconGroup">
-                    <div class="lexiconGroup__badge">
-                        <span class="lexiconGroup__letter" aria-hidden="true">B</span>
+                    <div class="lexiconGroup__badge"> <span class="lexiconGroup__letter" aria-hidden="true">C</span>
                     </div>
-
                     <div class="lexiconGroup__card">
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Biographie scientifique :</span>
-                            <span class="lexiconGroup__def">
-                                Récit de la vie d’un ou d’une scientifique, mettant en avant ses découvertes et sa
-                                carrière.
-                            </span>
-                        </p>
-
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Bias / Micro-biais :</span>
-                            <span class="lexiconGroup__def">
-                                Préjugés subtils et inconscients qui influencent les décisions et comportements, comme
-                                ceux
-                                décrits dans Picture a Scientist.
-                            </span>
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Cryptogynie :</span> <span
+                                class="lexiconGroup__def"> Terme désignant l’invisibilisation des femmes dans l’histoire
+                                et les récits collectifs. </span> </p>
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Cohorte / Étude de cohorte
+                                :</span> <span class="lexiconGroup__def"> Groupe de personnes étudiées sur une période
+                                pour observer des phénomènes scientifiques ou sociaux. </span> </p>
+                    </div>
+                </div>
+                <div class="lexiconGroup">
+                    <div class="lexiconGroup__badge"> <span class="lexiconGroup__letter" aria-hidden="true">D</span>
+                    </div>
+                    <div class="lexiconGroup__card">
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Désintégration nucléaire
+                                :</span> <span class="lexiconGroup__def"> Processus par lequel un noyau atomique
+                                instable se transforme en un ou plusieurs noyaux différents, libérant de l’énergie.
+                            </span> </p>
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Diversité scientifique :</span>
+                            <span class="lexiconGroup__def"> Inclusion de personnes de genres, origines ou parcours
+                                différents dans les sciences. </span>
                         </p>
                     </div>
                 </div>
-
                 <div class="lexiconGroup">
-                    <div class="lexiconGroup__badge">
-                        <span class="lexiconGroup__letter" aria-hidden="true">C</span>
+                    <div class="lexiconGroup__badge"> <span class="lexiconGroup__letter" aria-hidden="true">E</span>
                     </div>
-
                     <div class="lexiconGroup__card">
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Cryptogynie :</span>
-                            <span class="lexiconGroup__def">
-                                Terme désignant l’invisibilisation des femmes dans l’histoire et les récits collectifs.
-                            </span>
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Étoiles de désintégration
+                                :</span> <span class="lexiconGroup__def"> Motifs observés sur les plaques
+                                photographiques de Marietta Blau montrant la trajectoire des particules cosmiques.
+                            </span> </p>
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Exil scientifique :</span> <span
+                                class="lexiconGroup__def"> Situation où un chercheur doit quitter son pays pour
+                                continuer ses recherches (exemple : Marietta Blau en 1938). </span> </p>
+                    </div>
+                </div>
+                <div class="lexiconGroup">
+                    <div class="lexiconGroup__badge"> <span class="lexiconGroup__letter" aria-hidden="true">I</span>
+                    </div>
+                    <div class="lexiconGroup__card">
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Invisibilisation :</span> <span
+                                class="lexiconGroup__def"> Processus par lequel des personnes ou des contributions sont
+                                ignorées ou effacées de l’histoire. </span> </p>
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Innovation expérimentale
+                                :</span> <span class="lexiconGroup__def"> Méthodes ou techniques nouvelles permettant de
+                                faire avancer la science, comme la photographie nucléaire. </span> </p>
+                    </div>
+                </div>
+                <div class="lexiconGroup">
+                    <div class="lexiconGroup__badge"> <span class="lexiconGroup__letter" aria-hidden="true">M</span>
+                    </div>
+                    <div class="lexiconGroup__card">
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Méthode photographique nucléaire
+                                :</span> <span class="lexiconGroup__def"> Technique développée par Marietta Blau pour
+                                visualiser la trajectoire des particules atomiques. </span> </p>
+                    </div>
+                </div> <!-- P -->
+                <div class="lexiconGroup">
+                    <div class="lexiconGroup__badge"> <span class="lexiconGroup__letter" aria-hidden="true">P</span>
+                    </div>
+                    <div class="lexiconGroup__card">
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Particules subatomiques :</span>
+                            <span class="lexiconGroup__def"> Constituants très petits de la matière, comme les protons,
+                                neutrons et électrons. </span>
                         </p>
-
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Cohorte / Étude de cohorte :</span>
-                            <span class="lexiconGroup__def">
-                                Groupe de personnes étudiées sur une période pour observer des phénomènes scientifiques
-                                ou
-                                sociaux.
-                            </span>
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Patriarcat :</span> <span
+                                class="lexiconGroup__def"> Système social où les hommes détiennent la majorité du
+                                pouvoir et des privilèges. </span> </p>
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Pionnière scientifique :</span>
+                            <span class="lexiconGroup__def"> Une femme ou un homme qui ouvre de nouvelles voies dans un
+                                domaine scientifique. </span>
                         </p>
                     </div>
                 </div>
-
                 <div class="lexiconGroup">
-                    <div class="lexiconGroup__badge">
-                        <span class="lexiconGroup__letter" aria-hidden="true">D</span>
+                    <div class="lexiconGroup__badge"> <span class="lexiconGroup__letter" aria-hidden="true">R</span>
                     </div>
-
                     <div class="lexiconGroup__card">
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Désintégration nucléaire :</span>
-                            <span class="lexiconGroup__def">
-                                Processus par lequel un noyau atomique instable se transforme en un ou plusieurs noyaux
-                                différents, libérant de l’énergie.
-                            </span>
-                        </p>
-
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Diversité scientifique :</span>
-                            <span class="lexiconGroup__def">
-                                Inclusion de personnes de genres, origines ou parcours différents dans les sciences.
-                            </span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="lexiconGroup">
-                    <div class="lexiconGroup__badge">
-                        <span class="lexiconGroup__letter" aria-hidden="true">E</span>
-                    </div>
-
-                    <div class="lexiconGroup__card">
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Étoiles de désintégration :</span>
-                            <span class="lexiconGroup__def">
-                                Motifs observés sur les plaques photographiques de Marietta Blau montrant la trajectoire
-                                des
-                                particules cosmiques.
-                            </span>
-                        </p>
-
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Exil scientifique :</span>
-                            <span class="lexiconGroup__def">
-                                Situation où un chercheur doit quitter son pays pour continuer ses recherches (exemple :
-                                Marietta Blau en 1938).
-                            </span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="lexiconGroup">
-                    <div class="lexiconGroup__badge">
-                        <span class="lexiconGroup__letter" aria-hidden="true">I</span>
-                    </div>
-
-                    <div class="lexiconGroup__card">
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Invisibilisation :</span>
-                            <span class="lexiconGroup__def">
-                                Processus par lequel des personnes ou des contributions sont ignorées ou effacées de
-                                l’histoire.
-                            </span>
-                        </p>
-
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Innovation expérimentale :</span>
-                            <span class="lexiconGroup__def">
-                                Méthodes ou techniques nouvelles permettant de faire avancer la science, comme la
-                                photographie nucléaire.
-                            </span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="lexiconGroup">
-                    <div class="lexiconGroup__badge">
-                        <span class="lexiconGroup__letter" aria-hidden="true">M</span>
-                    </div>
-
-                    <div class="lexiconGroup__card">
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Méthode photographique nucléaire :</span>
-                            <span class="lexiconGroup__def">
-                                Technique développée par Marietta Blau pour visualiser la trajectoire des particules
-                                atomiques.
-                            </span>
-                        </p>
-                    </div>
-                </div>
-
-                <!-- P -->
-                <div class="lexiconGroup">
-                    <div class="lexiconGroup__badge">
-                        <span class="lexiconGroup__letter" aria-hidden="true">P</span>
-                    </div>
-
-                    <div class="lexiconGroup__card">
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Particules subatomiques :</span>
-                            <span class="lexiconGroup__def">
-                                Constituants très petits de la matière, comme les protons, neutrons et électrons.
-                            </span>
-                        </p>
-
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Patriarcat :</span>
-                            <span class="lexiconGroup__def">
-                                Système social où les hommes détiennent la majorité du pouvoir et des privilèges.
-                            </span>
-                        </p>
-
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Pionnière scientifique :</span>
-                            <span class="lexiconGroup__def">
-                                Une femme ou un homme qui ouvre de nouvelles voies dans un domaine scientifique.
-                            </span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="lexiconGroup">
-                    <div class="lexiconGroup__badge">
-                        <span class="lexiconGroup__letter" aria-hidden="true">R</span>
-                    </div>
-
-                    <div class="lexiconGroup__card">
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Rayons cosmiques :</span>
-                            <span class="lexiconGroup__def">
-                                Particules provenant de l’espace qui frappent la Terre, étudiées par Marietta Blau.
-                            </span>
-                        </p>
-
-                        <p class="lexiconGroup__item">
-                            <span class="lexiconGroup__term">Rayons gamma :</span>
-                            <span class="lexiconGroup__def">
-                                Rayonnement électromagnétique très énergétique, utilisé dans les recherches nucléaires.
-                            </span>
-                        </p>
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Rayons cosmiques :</span> <span
+                                class="lexiconGroup__def"> Particules provenant de l’espace qui frappent la Terre,
+                                étudiées par Marietta Blau. </span> </p>
+                        <p class="lexiconGroup__item"> <span class="lexiconGroup__term">Rayons gamma :</span> <span
+                                class="lexiconGroup__def"> Rayonnement électromagnétique très énergétique, utilisé dans
+                                les recherches nucléaires. </span> </p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
-
     <footer class="footer" aria-label="Pied de page">
-
         <div class="footer__content">
-
-            <div class="footer__logo">
-                <a href="../index.html" class="footer__logo-link">
-                    <img src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" class="footer__logo-img"
-                        loading="lazy">
-                </a>
-            </div>
-
+            <div class="footer__logo"> <a href="./index.html" class="footer__logo-link"> <img
+                        src="../assets/icons/Logo_AQITA_Light.svg" alt="Logo du site AQITA" class="footer__logo-img"
+                        loading="lazy"> </a> </div>
             <nav class="footer__menu" aria-label="Menu du footer">
                 <h3 class="footer__menu-title">MENU</h3>
                 <ul class="footer__menu-list">
                     <li class="footer__menu-item"><a href="Quisommenous.html" class="footer__menu-link">Qui somme nous
-                        </a>
-                        |</li>
+                        </a> |</li>
                     <li class="footer__menu-item"><a href="Ressource.html" class="footer__menu-link">Ressources </a> |
                     </li>
                     <li class="footer__menu-item"><a href="lexique.html" class="footer__menu-link">Lexique </a> |</li>
                     <li class="footer__menu-item"><a href="contact.html" class="footer__menu-link">Contact </a> |</li>
                 </ul>
             </nav>
-
-            <div class="footer__socials">
-                <span class="footer__separator"></span>
+            <div class="footer__socials"> <span class="footer__separator"></span>
                 <h3 class="footer__socials-title">SUIVEZ NOUS</h3>
                 <ul class="footer__socials-list">
                     <li><a href="../index.html" class="footer__social-link"><img src="../assets/icons/youtube-light.svg"
@@ -332,14 +212,10 @@
                                 src="../assets/icons/instagram-light.svg" alt="Instagram" loading="lazy"></a></li>
                 </ul>
             </div>
-
-            <div class="footer__bottom-text">
-                <span class="footer__separator"></span>
+            <div class="footer__bottom-text"> <span class="footer__separator"></span>
                 <p class="footer__festival">projet réalisé en 2025 dans le cadre d’un exercice pédagogique au
-                    département
-                    <a href="https://www.iut-nfc.univ-fcomte.fr/" target="_blank" rel="noopener noreferrer">MMi de
-                        Montbéliard</a>
-                </p>
+                    département <a href="https://www.iut-nfc.univ-fcomte.fr/" target="_blank"
+                        rel="noopener noreferrer">MMi de Montbéliard</a> </p>
             </div>
         </div>
     </footer>
