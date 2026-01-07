@@ -21,6 +21,21 @@
     height: auto;
 }
 
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer h6 {
+    color: var(--light);
+}
+
+.footer p,
+.footer a,
+.footer li {
+    color: var(--light);
+}
+
 .footer__menu-list {
     list-style: none;
     margin: 0;
