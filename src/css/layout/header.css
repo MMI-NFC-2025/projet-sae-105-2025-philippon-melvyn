@@ -26,7 +26,7 @@
 }
 
 .header__link img {
-    height: 44px;
+    height: 2.75rem;
     width: auto;
     display: block;
 }
@@ -42,9 +42,9 @@
 }
 
 .menu-btn__bar {
-    width: 28px;
-    height: 3px;
-    border-radius: 99px;
+    width: 1.75rem;
+    height: 0.1875rem;
+    border-radius: var(--radius-full);
     display: block;
 }
 
@@ -72,9 +72,6 @@
     border: 0;
     background: transparent;
     color: var(--light);
-    font-size: var(--font-size-25);
-    font-family: var(--font-family-urbanist), system-ui, sans-serif;
-    font-weight: var(--font-weight-bold);
     cursor: pointer;
     margin-left: auto;
     display: block;
@@ -100,7 +97,7 @@
 }
 
 .header__logo-image {
-    width: 44px;
+    width: 2.75rem;
     height: auto;
     display: block;
 }
@@ -109,18 +106,13 @@
     display: inline-flex;
     width: 100%;
     padding: 0.55rem 0;
-    font-family: var(--font-family-work-sans), system-ui, sans-serif;
-    font-size: var(--font-size-16);
-    font-weight: var(--font-weight-semibold);
-    letter-spacing: 0.02em;
     color: rgba(244, 245, 240, 0.85);
-    text-transform: uppercase;
 }
 
 .menu-btn:focus-visible,
 .menu__close:focus-visible,
 .menu__link:focus-visible,
 .header__link:focus-visible {
-    outline: 2px solid var(--primary-300);
-    outline-offset: 3px;
+    outline: 0.125rem solid var(--primary-300);
+    outline-offset: 0.1875rem;
 }

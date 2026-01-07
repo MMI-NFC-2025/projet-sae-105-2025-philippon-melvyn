@@ -1,4 +1,3 @@
-
 .scientist {
     padding: 1.25rem 1.25rem 0;
 }
@@ -9,8 +8,6 @@
 
 .scientist__title {
     margin: 0;
-    font-size: var(--font-size-25);
-    font-weight: var(--font-weight-extrabold);
     text-transform: uppercase;
 }
 
@@ -20,12 +17,11 @@
 
 .scientist__img {
     width: 100%;
-    border-radius: 0.5rem;
+    border-radius: var(--radius-sm);
     object-fit: cover;
 }
 
 .scientist__caption {
     margin-top: 2.5rem;
     margin-bottom: 4rem;
-    font-size: var(--font-size-15);
 }

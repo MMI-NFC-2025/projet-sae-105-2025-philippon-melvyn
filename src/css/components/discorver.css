@@ -8,9 +8,6 @@
 
 .discover__title {
     margin: 0;
-    font-family: var(--font-family-urbanist), system-ui, sans-serif;
-    font-size: var(--font-size-25);
-    font-weight: var(--font-weight-extrabold);
 }
 
 .discover__list {
@@ -19,10 +16,10 @@
 }
 
 .discoverCard {
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     overflow: hidden;
     background: var(--light-100);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-sm);
     border: none;
 }
 
@@ -37,7 +34,7 @@
 
 .discoverCard__img {
     width: 100%;
-    height: 240px;
+    height: 15rem;
     object-fit: cover;
     object-position: end;
 }
@@ -50,17 +47,12 @@
 
 .discoverCard__title {
     margin: 0;
-    font-family: var(--font-family-urbanist), system-ui, sans-serif;
-    font-size: var(--font-size-18);
-    font-weight: var(--font-weight-extrabold);
     color: var(--accent-100);
 }
 
 .discoverCard__text {
     margin: 0;
-    font-size: var(--font-size-15);
     color: var(--accent-100);
-    line-height: 1.5;
 }
 
 .discoverCard__link {
@@ -69,10 +61,7 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.7rem 1.1rem;
-    border-radius: 6px;
+    border-radius: var(--radius-sm);
     background: var(--primary-400);
     color: var(--light);
-    font-family: var(--font-family-roboto-condensed), system-ui, sans-serif;
-    font-size: var(--font-size-15);
-    font-weight: var(--font-weight-bold);
 }

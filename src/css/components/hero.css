@@ -12,7 +12,7 @@
 .homeHero__img {
     width: 100%;
     height: 52vh;
-    min-height: 360px;
+    min-height: 22.5rem;
     object-fit: cover;
     object-position: center;
 }
@@ -32,35 +32,32 @@
     max-width: 10ch;
     color: var(--light-100);
     text-align: right;
-    letter-spacing: var(--letter-spacing-0);
 }
 
 .homeHero__scroll {
     position: absolute;
     left: 50%;
-    bottom: -40px;
+    bottom: -2.5rem;
     transform: translateX(-50%);
-    width: 80px;
-    height: 80px;
-    border-radius: 999px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: var(--radius-full);
     display: grid;
     place-items: center;
     background: var(--primary-500);
-    border: 4px solid var(--light);
+    border: 0.25rem solid var(--light);
     box-shadow: none;
     pointer-events: auto;
     transition: all 0.3s ease;
 }
 
 .homeHero__scroll:hover {
-    transform: translateX(-50%) translateY(4px);
+    transform: translateX(-50%) translateY(0.25rem);
     box-shadow: none;
 }
 
 .homeHero__scrollIcon {
-    font-size: 2rem;
     color: var(--light-100);
-    line-height: 1;
     display: block;
     text-align: center;
 }
@@ -86,29 +83,27 @@
 .storyHero__scroll {
     position: absolute;
     left: 50%;
-    bottom: -40px;
+    bottom: -2.5rem;
     transform: translateX(-50%);
-    width: 80px;
-    height: 80px;
-    border-radius: 999px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: var(--radius-full);
     display: grid;
     place-items: center;
     background: var(--primary-500);
-    border: 4px solid var(--light);
+    border: 0.25rem solid var(--light);
     box-shadow: none;
     pointer-events: auto;
     transition: all 0.3s ease;
 }
 
 .storyHero__scroll:hover {
-    transform: translateX(-50%) translateY(4px);
+    transform: translateX(-50%) translateY(0.25rem);
     box-shadow: none;
 }
 
 .storyHero__scrollIcon {
-    font-size: 2rem;
     color: var(--light-100);
-    line-height: 1;
     display: block;
     text-align: center;
 }
@@ -138,15 +133,15 @@
 .aboutHero__scroll {
     position: absolute;
     left: 50%;
-    bottom: 85px;
+    bottom: 5.3125rem;
     transform: translateX(-50%);
-    width: 80px;
-    height: 80px;
-    border-radius: 999px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: var(--radius-full);
     display: grid;
     place-items: center;
     background: var(--primary-500);
-    border: 4px solid var(--light);
+    border: 0.25rem solid var(--light);
     box-shadow: none;
     pointer-events: auto;
     transition: all 0.3s ease;
@@ -158,9 +153,7 @@
 }
 
 .aboutHero__scrollIcon {
-    font-size: 2rem;
     color: var(--light-100);
-    line-height: 1;
     display: block;
     text-align: center;
 }
@@ -194,15 +187,15 @@
 .womenHistoryHero__scroll {
     position: absolute;
     left: 50%;
-    top: -80px;
-    transform: translateX(-50%) translateY(-40px);
-    width: 80px;
-    height: 80px;
-    border-radius: 999px;
+    top: -5rem;
+    transform: translateX(-50%) translateY(-2.5rem);
+    width: 5rem;
+    height: 5rem;
+    border-radius: var(--radius-full);
     display: grid;
     place-items: center;
     background: var(--primary-500);
-    border: 4px solid var(--light);
+    border: 0.25rem solid var(--light);
     box-shadow: none;
     pointer-events: auto;
     transition: all 0.3s ease;
@@ -210,15 +203,12 @@
 }
 
 .womenHistoryHero__scroll:hover {
-    transform: translateX(-50%) translateY(-36px);
+    transform: translateX(-50%) translateY(-2.25rem);
     box-shadow: none;
 }
 
 .womenHistoryHero__scrollIcon {
-    font-size: 2.5rem;
     color: var(--light-100);
-    line-height: 0;
-    font-weight: 200;
     display: flex;
     align-items: center;
     justify-content: center;

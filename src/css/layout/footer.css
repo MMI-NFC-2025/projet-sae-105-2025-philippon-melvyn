@@ -5,7 +5,7 @@
 }
 
 .footer__content {
-    max-width: 980px;
+    max-width: 61.25rem;
     margin: 0 auto;
     display: grid;
     gap: 1.6rem;
@@ -17,7 +17,7 @@
 }
 
 .footer__logo-img {
-    width: 140px;
+    width: 8.75rem;
     height: auto;
 }
 
@@ -31,16 +31,13 @@
 
 .footer__menu-item {
     margin: 0;
-    font-family: var(--font-family-work-sans), system-ui, sans-serif;
-    font-size: var(--font-size-16);
-    font-weight: var(--font-weight-regular);
     opacity: 0.75;
 }
 
 .footer__separator {
     display: block;
     width: 100%;
-    height: 2px;
+    height: 0.125rem;
     background: var(--light);
     opacity: 0.5;
     margin: 1.25rem 0;
@@ -63,14 +60,14 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 56px;
-    height: 56px;
-    border-radius: 14px;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: var(--radius-lg);
 }
 
 .footer__social-link img {
-    width: 34px;
-    height: 34px;
+    width: 2.125rem;
+    height: 2.125rem;
 }
 
 .footer__bottom-text {
@@ -79,7 +76,5 @@
 
 .footer__festival {
     margin: 0;
-    font-size: var(--font-size-12);
-    line-height: 1.4;
     opacity: 0.85;
 }

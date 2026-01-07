@@ -1,0 +1,86 @@
+.womenTimeline__list {
+    display: grid;
+    gap: 0;
+}
+
+.womenTimelineCard {
+    background: var(--light-100);
+}
+
+.womenTimelineCard__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    color: var(--light-100);
+}
+
+.womenTimelineCard__name {
+    overflow: hidden;
+}
+
+.womenTimelineCard__text {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.womenTimelineCard__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1rem;
+
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--light-100);
+}
+
+.womenTimelineCard--light .womenTimelineCard__top,
+.womenTimelineCard--light .womenTimelineCard__link {
+    background: var(--primary-200);
+}
+
+.womenTimelineCard--mid .womenTimelineCard__top,
+.womenTimelineCard--mid .womenTimelineCard__link {
+    background: var(--primary-300);
+}
+
+.womenTimelineCard--dark .womenTimelineCard__top,
+.womenTimelineCard--dark .womenTimelineCard__link {
+    background: var(--primary-400);
+}
+
+.womenTimelineCard--darkest .womenTimelineCard__top,
+.womenTimelineCard--darkest .womenTimelineCard__link {
+    background: var(--primary-500);
+}
+
+.womenHistoryIntro {
+    padding-bottom: 3rem;
+}
+
+.womenHistoryIntro__text {
+    margin-left: 1rem;
+    margin-right: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.womenHistoryImage__media {
+    margin-top: 4rem;
+}
+
+.womenHistoryOutro {
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+}
+
+.womenHistoryOutro__text {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}

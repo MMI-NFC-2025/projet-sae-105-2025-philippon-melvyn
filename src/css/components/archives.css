@@ -15,9 +15,9 @@
 
 .archivesCarousel__slide {
     position: relative;
-    border-radius: 0.75rem;
+    border-radius: var(--radius-md);
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    box-shadow: var(--shadow-lg);
 }
 
 .archivesCarousel__img {
@@ -33,18 +33,15 @@
     bottom: 0;
     margin: 0;
     padding: 0.85rem 1rem;
-    font-family: "Kanit", sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.2px;
     color: var(--light);
     background: var(--primary-400);
 }
 
 .archivesCarousel__control {
     border: 0;
-    width: 44px;
-    height: 44px;
-    border-radius: 999px;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: var(--radius-full);
     display: inline-grid;
     place-items: center;
     cursor: pointer;
@@ -53,9 +50,7 @@
 }
 
 .archivesCarousel__control span {
-    font-size: 1.75rem;
-    line-height: 1;
-    transform: translateY(-1px);
+    transform: translateY(-0.0625rem);
 }
 
 .archivesCarousel__control:hover {
@@ -64,8 +59,8 @@
 }
 
 .archivesCarousel__control:focus-visible {
-    outline: 3px solid var(--primary-400);
-    outline-offset: 3px;
+    outline: 0.1875rem solid var(--primary-400);
+    outline-offset: 0.1875rem;
 }
 
 .archivesDetails {
@@ -73,9 +68,6 @@
 }
 
 .archivesDetails__subtitle {
-    font-family: "Kanit", sans-serif;
-    font-weight: 600;
-    font-size: 1.05rem;
     margin: 0 0 0.5rem;
     color: var(--primary-300);
 }
@@ -88,17 +80,15 @@
 }
 
 .archivesDetails__row+.archivesDetails__row {
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: 0.0625rem solid rgba(0, 0, 0, 0.08);
 }
 
 .archivesDetails__label {
     margin: 0;
-    font-weight: 600;
 }
 
 .archivesDetails__value {
     margin: 0;
-    font-weight: 600;
     color: var(--primary-300);
 }
 
@@ -108,14 +98,14 @@
     align-items: center;
     gap: 0.6rem;
     padding: 0.85rem 1.1rem;
-    border-radius: 0.7rem;
+    border-radius: var(--radius-md);
     background: var(--primary-400);
     color: var(--light);
     text-decoration: none;
 }
 
 .archivesCarousel__track {
-    height: 420px;
+    height: 26.25rem;
 }
 
 .archivesCarousel__slide {

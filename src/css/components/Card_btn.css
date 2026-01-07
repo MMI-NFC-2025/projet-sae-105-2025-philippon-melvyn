@@ -8,8 +8,6 @@
 
 .watch__title {
     margin: 0;
-    font-size: var(--font-size-16);
-    font-weight: var(--font-weight-regular);
 }
 
 .watch__list {
@@ -22,26 +20,24 @@
 
 .watch__link {
     display: grid;
-    grid-template-columns: 44px 1fr 70px;
+    grid-template-columns: 2.75rem 1fr 4.375rem;
     align-items: center;
-    min-height: 52px;
-    border-radius: 12px;
+    min-height: 3.25rem;
+    border-radius: var(--radius-md);
     overflow: hidden;
 
     background: var(--primary-100);
 }
 
 .watch__number {
-    width: 28px;
-    height: 28px;
-    border-radius: 999px;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: var(--radius-full);
     display: grid;
     place-items: center;
     justify-self: center;
     background: var(--primary-300);
     color: var(--light);
-    font-size: var(--font-size-12);
-    font-weight: var(--font-weight-bold);
 }
 
 .watch__arrow {
@@ -50,5 +46,4 @@
     place-items: center;
     background: var(--primary-400);
     color: var(--light);
-    font-size: 1.1rem;
-} 
+}

@@ -55,7 +55,7 @@
     margin-left: 2rem;
     margin-right: 2rem;
     object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: var(--radius-sm);
 }
 
 .storyMedia__caption {
@@ -109,7 +109,7 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 110px 1fr;
+    grid-template-columns: 6.875rem 1fr;
     gap: 1rem 0.85rem;
 }
 
@@ -121,7 +121,7 @@
     display: grid;
     place-items: center;
     padding: 0.75rem 0.5rem;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
 
     background: var(--primary-400);
     color: var(--light);
@@ -131,6 +131,6 @@
     display: flex;
     align-items: center;
     padding: 0.75rem 0.9rem;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background: var(--light-100);
 }

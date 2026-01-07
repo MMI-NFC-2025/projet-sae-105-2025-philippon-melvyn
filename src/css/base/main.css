@@ -1,8 +1,7 @@
-body {
-    font-family: "work sans","roboto condensed","Urbanist", sans-serif;
-}
+/* =========================================
+   BASE RESET & GLOBAL STYLES
+   ========================================= */
 
-/* ---------- Base / Reset ---------- */
 *,
 *::before,
 *::after {
@@ -15,7 +14,6 @@ html {
 
 body {
     margin: 0;
-    /* supprime la bande blanche sous le header */
     background: var(--light);
     color: var(--accent-100);
     font-family: var(--font-family-work-sans), system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -40,7 +38,76 @@ button:focus-visible {
     outline-offset: 2px;
 }
 
-/* ---------- Home page wrapper ---------- */
 .homePage {
     width: 100%;
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-family-urbanist);
+    letter-spacing: var(--letter-spacing-0);
+    color: var(--accent-100);
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--font-size-35);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-60);
+}
+
+h2 {
+    font-size: var(--font-size-25);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.25;
+}
+
+h3 {
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.3;
+}
+
+p {
+    margin: 0;
+    font-family: var(--font-family-work-sans);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.55;
+    letter-spacing: var(--letter-spacing-0);
+    color: var(--accent-100);
+}
+
+small {
+    font-family: var(--font-family-work-sans);
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.4;
+    letter-spacing: var(--letter-spacing-0);
+    color: var(--accent-100);
+}
+
+button,
+input[type="submit"] {
+    font-family: var(--font-family-roboto-condensed);
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-extrabold);
+    letter-spacing: var(--letter-spacing-0);
+}
+
+label {
+    font-family: var(--font-family-work-sans);
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.4;
+}
+
+input,
+textarea,
+select {
+    font-family: var(--font-family-work-sans);
+    font-size: var(--font-size-15);
+    line-height: 1.5;
 }

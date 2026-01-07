@@ -3,8 +3,8 @@
     /* colors */
     --accent-100: #212121;
     --dark: #0d0c0c;
-    --light: #f4f5f0;
-    --light-100: #ffffff;
+    --light: #ffffff;
+    --light-100: #f4f5f0;
     --primary-200: #70aed7;
     --primary-300: #1c7cd1;
     --primary-400: #285482;
@@ -38,4 +38,15 @@
     --font-family-roboto-condensed: Roboto Condensed;
     --font-family-urbanist: Urbanist;
     --font-family-work-sans: Work Sans;
+
+    /* border radius */
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 0.875rem;
+    --radius-xl: 2rem;
+    --radius-full: 62.5rem;
+
+    /* box shadows */
+    --shadow-sm: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.18);
 }

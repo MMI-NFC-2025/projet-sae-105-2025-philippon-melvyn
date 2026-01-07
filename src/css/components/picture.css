@@ -5,7 +5,6 @@
 .picture__title {
     margin: 2 2rem;
     padding-right: 9rem;
-    line-height: 1.05;
 }
 
 .picture__intro {
@@ -15,35 +14,27 @@
 
 .picture__text {
     margin: 0;
-    font-family: var(--font-family-work-sans), system-ui, sans-serif;
-    font-size: var(--font-size-15);
-    line-height: 1.5;
 }
 
 .picture__quote {
     margin: 1.25rem 0 0;
     padding: 1rem;
     background: var(--light);
-    border-radius: 14px;
-    box-shadow: 0 10px 22px var(--shadow);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
 }
 
 .picture__quoteText {
     margin: 0;
-    font-size: var(--font-size-15);
-    line-height: 1.55;
 }
 
 .picture__hashtag {
-    font-weight: var(--font-weight-extrabold);
     color: var(--primary-300);
 }
 
 .picture__highlight {
     margin: 1rem 0 0;
     color: var(--primary-300);
-    font-size: var(--font-size-15);
-    line-height: 1.5;
     margin-bottom: 4rem;
 }
 
@@ -65,10 +56,6 @@
     margin-left: 1rem;
 }
 
-.pictureSynopsis__title {
-    font-size: var(--font-size-25);
-    font-weight: var(--font-weight-extrabold);
-}
 
 .pictureSynopsis__content {
     display: grid;
@@ -78,8 +65,6 @@
 
 .pictureSynopsis__text {
     margin: 0;
-    font-size: var(--font-size-15);
-    line-height: 1.55;
     color: var(--light);
 }
 
@@ -96,7 +81,7 @@
 }
 
 .pictureInfo__stat {
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 0.85rem 0.75rem;
     background: var(--primary-200);
     color: var(--light);
@@ -113,14 +98,10 @@
 
 .pictureInfo__label {
     margin: 0;
-    font-size: var(--font-size-12);
 }
 
 .pictureInfo__value {
     margin: 0.15rem 0 0;
-    font-size: var(--font-size-25);
-    font-weight: var(--font-weight-extrabold);
-    line-height: 1.1;
 }
 
 .pictureInfo__stat--full {
@@ -132,9 +113,4 @@
     padding: 0.85rem 1rem;
     background: var(--primary-500);
     text-align: left;
-}
-
-.pictureInfo__stat--full .pictureInfo__value {
-    font-size: var(--font-size-16);
-    font-weight: var(--font-weight-semibold);
 }

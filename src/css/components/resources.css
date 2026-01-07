@@ -3,12 +3,10 @@
 }
 
 .resourcesIntro__title {
-    letter-spacing: var(--letter-spacing-0);
     margin: 0 0 0.75rem;
 }
 
 .resourcesIntro__text {
-    line-height: 1.55;
     margin: 0;
 }
 
@@ -26,14 +24,14 @@
 
 .resourcesCard {
     display: grid;
-    grid-template-columns: 74px 1fr;
+    grid-template-columns: 4.625rem 1fr;
     align-items: center;
     column-gap: 0.75rem;
     background: var(--light-100);
-    border-radius: 0.75rem;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
     overflow: hidden;
-    min-height: 72px;
+    min-height: 4.5rem;
 }
 
 .resourcesCard__media {
@@ -43,9 +41,9 @@
 }
 
 .resourcesCard__img {
-    width: 58px;
-    height: 58px;
-    border-radius: 999px;
+    width: 3.625rem;
+    height: 3.625rem;
+    border-radius: var(--radius-full);
     object-fit: cover;
 }
 
@@ -56,15 +54,13 @@
     gap: 0.75rem;
     width: 100%;
     padding: 0.85rem 0.75rem 0.85rem 0;
-    border-left: 1px solid var(--primary-400);
+    border-left: 0.0625rem solid var(--primary-400);
 }
 
 .resourcesCard__name {
     margin: 0;
     margin-left: 0.5rem;
     color: var(--primary-400);
-    letter-spacing: 0.01em;
-    line-height: 1.1;
 }
 
 .resourcesCard__link {
@@ -76,6 +72,6 @@
     color: var(--light);
     background: var(--primary-400);
     padding: 0.55rem 1rem;
-    border-radius: 0.35rem;
+    border-radius: var(--radius-sm);
     white-space: nowrap;
 }
