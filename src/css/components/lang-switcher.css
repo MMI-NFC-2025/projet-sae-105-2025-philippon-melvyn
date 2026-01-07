@@ -1,7 +1,3 @@
-/* =========================================
-   Component: Language Switcher
-   ========================================= */
-
 .lang-switcher {
     position: relative;
     z-index: 100;
@@ -23,9 +19,6 @@
     transition: all 0.3s ease;
 }
 
-.lang-switcher__btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
 
 .lang-switcher__btn[aria-expanded="true"] .lang-switcher__arrow {
     transform: rotate(180deg);
@@ -68,8 +61,4 @@
     font-family: var(--font-family-urbanist), system-ui, sans-serif;
     font-weight: var(--font-weight-bold);
     transition: background 0.2s ease;
-}
-
-.lang-switcher__link:hover {
-    background: var(--primary-100);
 }

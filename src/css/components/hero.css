@@ -1,11 +1,7 @@
-/* =========================================
-   Component: homeHero
-   ========================================= */
 .homeHero {
     position: relative;
     width: 100%;
     margin-bottom: 6rem;
-    /* pas de margin-top => l'image colle au header */
 }
 
 .homeHero__media {
@@ -27,50 +23,203 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    padding: 1.25rem 1rem 2rem;
+    padding: 1.25rem 1.5rem 2rem;
     pointer-events: none;
-    /* pour laisser le scroll cliquable sans gêne */
 }
 
 .homeHero__title {
     margin: 0;
-    max-width: 18ch;
-    font-family: var(--font-family-urbanist), system-ui, sans-serif;
-    font-size: var(--font-size-35);
-    font-weight: var(--font-weight-extrabold);
-    color: var(--light);
+    max-width: 10ch;
+    color: var(--light-100);
     text-align: right;
     letter-spacing: var(--letter-spacing-0);
-    line-height: 1.05;
-    text-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
-    pointer-events: none;
 }
 
 .homeHero__scroll {
     position: absolute;
     left: 50%;
-    bottom: 0.9rem;
+    bottom: -40px;
     transform: translateX(-50%);
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     border-radius: 999px;
     display: grid;
     place-items: center;
-    background: rgba(20, 35, 65, 0.95);
+    background: var(--primary-500);
     border: 4px solid var(--light);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: none;
     pointer-events: auto;
     transition: all 0.3s ease;
 }
 
 .homeHero__scroll:hover {
     transform: translateX(-50%) translateY(4px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+    box-shadow: none;
 }
 
 .homeHero__scrollIcon {
-    font-size: 1.8rem;
-    color: var(--light);
+    font-size: 2rem;
+    color: var(--light-100);
     line-height: 1;
-    font-weight: 300;
+    display: block;
+    text-align: center;
+}
+
+.storyHero {
+    position: relative;
+}
+
+.storyHero__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.storyHero__title {
+    position: absolute;
+    left: 1.5rem;
+    top: 13.5rem;
+    margin: 0;
+    color: var(--light-100);
+}
+
+.storyHero__scroll {
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: var(--primary-500);
+    border: 4px solid var(--light);
+    box-shadow: none;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+}
+
+.storyHero__scroll:hover {
+    transform: translateX(-50%) translateY(4px);
+    box-shadow: none;
+}
+
+.storyHero__scrollIcon {
+    font-size: 2rem;
+    color: var(--light-100);
+    line-height: 1;
+    display: block;
+    text-align: center;
+}
+
+.aboutHero {
+    position: relative;
+}
+
+.aboutHero__content {
+    position: relative;
+}
+
+.aboutHero__title {
+    margin-top: 5rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.aboutHero__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+}
+
+.aboutHero__scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 85px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: var(--primary-500);
+    border: 4px solid var(--light);
+    box-shadow: none;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+}
+
+.aboutHero__scroll:hover {
+    transform: translateX(-50%);
+    box-shadow: none;
+}
+
+.aboutHero__scrollIcon {
+    font-size: 2rem;
+    color: var(--light-100);
+    line-height: 1;
+    display: block;
+    text-align: center;
+}
+
+.womenHistoryHero {
+    position: relative;
+}
+
+.womenHistoryHero__media {
+    width: 100%;
+    position: relative;
+}
+
+.womenHistoryHero__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.womenHistoryHero__content {
+    position: relative;
+}
+
+.womenHistoryHero__title {
+    margin-top: 5rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.womenHistoryHero__scroll {
+    position: absolute;
+    left: 50%;
+    top: -80px;
+    transform: translateX(-50%) translateY(-40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: var(--primary-500);
+    border: 4px solid var(--light);
+    box-shadow: none;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.womenHistoryHero__scroll:hover {
+    transform: translateX(-50%) translateY(-36px);
+    box-shadow: none;
+}
+
+.womenHistoryHero__scrollIcon {
+    font-size: 2.5rem;
+    color: var(--light-100);
+    line-height: 0;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
