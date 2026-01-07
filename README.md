@@ -7,4 +7,5 @@
 - PRÉNOM : MELVYN
 - GROUPE : B2
 - URL du site : https://illustrious-twilight-b79ac1.netlify.app/
-- URL FIGMA : 
+                https://aqita.melvyn-philippon.fr/
+- URL FIGMA : https://www.figma.com/design/qR0gXDUmIzEEzpjePROXqn/Maquettes-projet-individuel-%E2%80%94-Melvyn-Philippon?node-id=3701-115&p=f&t=XfztiC8WwJFucpfm-0
