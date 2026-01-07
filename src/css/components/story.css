@@ -74,16 +74,18 @@
     padding-bottom: 2.5rem;
     padding-right: 3.5rem;
     background: var(--primary-300);
-    color: var(--light-100);
+    color: var(--light);
 
 }
 
 .storyHighlight__title {
     margin-bottom: 2.5rem;
+    color: var(--light);
 }
 
 .storyHighlight__text {
     margin-bottom: 2rem;
+    color: var(--light);
 }
 
 .lifeTimeline__text {

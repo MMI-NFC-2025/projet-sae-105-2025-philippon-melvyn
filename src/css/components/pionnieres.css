@@ -56,7 +56,7 @@
     text-align: center;
     padding: 2rem 0.5rem;
     border-radius: var(--radius-md);
-    color: var(--light-100);
+    color: var(--light);
 }
 
 .pioneersThemes__item--primary {

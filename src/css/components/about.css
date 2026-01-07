@@ -15,12 +15,12 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     background: var(--primary-300);
-    color: var(--light-100);
+    color: var(--light);
 }
 
 .aboutGoals__title {
     margin: 0 0 0.75rem;
-    color: var(--light-100);
+    color: var(--light);
 }
 
 
@@ -32,6 +32,7 @@
 
 .aboutGoals__list .aboutGoals__text {
     margin: 0;
+    color: var(--light);
 }
 
 .aboutContent {

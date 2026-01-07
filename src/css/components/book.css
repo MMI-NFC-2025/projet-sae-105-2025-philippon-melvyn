@@ -20,6 +20,7 @@
 
 .bookSynopsis__title {
     margin-top: 1.5rem;
+    color: var(--light);
 }
 
 .bookSynopsis__content {
